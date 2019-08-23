@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D1E36222239880B008D8E19 /* TappyBleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E36212239880B008D8E19 /* TappyBleManager.swift */; };
+		6D9A56CB223FFEF200EF523C /* TagReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A56CA223FFEF200EF523C /* TagReadViewController.swift */; };
+		6D9A56CD2240153F00EF523C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A56CC2240153F00EF523C /* Utils.swift */; };
+		6D9A56CF2240469500EF523C /* TagWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A56CE2240469500EF523C /* TagWriteViewController.swift */; };
+		6DC63A7B223970F0007B3A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC63A7A223970F0007B3A02 /* AppDelegate.swift */; };
+		6DC63A7D223970F0007B3A02 /* ConnectTappyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC63A7C223970F0007B3A02 /* ConnectTappyViewController.swift */; };
+		6DC63A7F223970F0007B3A02 /* LaunchUrlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC63A7E223970F0007B3A02 /* LaunchUrlViewController.swift */; };
+		6DC63A82223970F0007B3A02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC63A80223970F0007B3A02 /* Main.storyboard */; };
+		6DC63A84223970F1007B3A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC63A83223970F1007B3A02 /* Assets.xcassets */; };
+		6DC63A87223970F1007B3A02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC63A85223970F1007B3A02 /* LaunchScreen.storyboard */; };
+		6DC63A92223970F1007B3A02 /* TappyBLETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC63A91223970F1007B3A02 /* TappyBLETests.swift */; };
+		6DC63A9D223970F1007B3A02 /* TappyBLEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC63A9C223970F1007B3A02 /* TappyBLEUITests.swift */; };
+		9657E1DB5A678363FD3B1481 /* Pods_TappyBLETests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DCB0B00C46C85442AD167CC /* Pods_TappyBLETests.framework */; };
+		D0BEF14BE9C596876C59ECBB /* Pods_TappyBLE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D69249C577DBE0D868708 /* Pods_TappyBLE.framework */; };
+		DE8E529C75E6EF2D0CF98A5B /* Pods_TappyBLEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCAC7859C89754DFAA9DDBC0 /* Pods_TappyBLEUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DC63A8E223970F1007B3A02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DC63A6F223970F0007B3A02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DC63A76223970F0007B3A02;
+			remoteInfo = TappyBLE;
+		};
+		6DC63A99223970F1007B3A02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DC63A6F223970F0007B3A02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DC63A76223970F0007B3A02;
+			remoteInfo = TappyBLE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F03D1ED8998827C31B2036D /* Pods-TappyBLE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TappyBLE.release.xcconfig"; path = "Pods/Target Support Files/Pods-TappyBLE/Pods-TappyBLE.release.xcconfig"; sourceTree = "<group>"; };
+		2236AB7C107C2815177A4B09 /* Pods-TappyBLETests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TappyBLETests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TappyBLETests/Pods-TappyBLETests.release.xcconfig"; sourceTree = "<group>"; };
+		4D1A8AEDA7F3770C049C1C9C /* Pods-TappyBLEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TappyBLEUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TappyBLEUITests/Pods-TappyBLEUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		609D69249C577DBE0D868708 /* Pods_TappyBLE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TappyBLE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69FDF63BDEC4FCAEA3AD44D5 /* Pods-TappyBLEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TappyBLEUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TappyBLEUITests/Pods-TappyBLEUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D1E36212239880B008D8E19 /* TappyBleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappyBleManager.swift; sourceTree = "<group>"; };
+		6D9A56CA223FFEF200EF523C /* TagReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagReadViewController.swift; sourceTree = "<group>"; };
+		6D9A56CC2240153F00EF523C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		6D9A56CE2240469500EF523C /* TagWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagWriteViewController.swift; sourceTree = "<group>"; };
+		6DC63A77223970F0007B3A02 /* TappyBLE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TappyBLE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC63A7A223970F0007B3A02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DC63A7C223970F0007B3A02 /* ConnectTappyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectTappyViewController.swift; sourceTree = "<group>"; };
+		6DC63A7E223970F0007B3A02 /* LaunchUrlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchUrlViewController.swift; sourceTree = "<group>"; };
+		6DC63A81223970F0007B3A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DC63A83223970F1007B3A02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DC63A86223970F1007B3A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DC63A88223970F1007B3A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DC63A8D223970F1007B3A02 /* TappyBLETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TappyBLETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC63A91223970F1007B3A02 /* TappyBLETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappyBLETests.swift; sourceTree = "<group>"; };
+		6DC63A93223970F1007B3A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DC63A98223970F1007B3A02 /* TappyBLEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TappyBLEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC63A9C223970F1007B3A02 /* TappyBLEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappyBLEUITests.swift; sourceTree = "<group>"; };
+		6DC63A9E223970F1007B3A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DCB0B00C46C85442AD167CC /* Pods_TappyBLETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TappyBLETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBD9A903950E06F1AE26FEB6 /* Pods-TappyBLE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TappyBLE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TappyBLE/Pods-TappyBLE.debug.xcconfig"; sourceTree = "<group>"; };
+		F1FD90903659B6445A740414 /* Pods-TappyBLETests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TappyBLETests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TappyBLETests/Pods-TappyBLETests.debug.xcconfig"; sourceTree = "<group>"; };
+		FCAC7859C89754DFAA9DDBC0 /* Pods_TappyBLEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TappyBLEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DC63A74223970F0007B3A02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BEF14BE9C596876C59ECBB /* Pods_TappyBLE.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC63A8A223970F1007B3A02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9657E1DB5A678363FD3B1481 /* Pods_TappyBLETests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC63A95223970F1007B3A02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE8E529C75E6EF2D0CF98A5B /* Pods_TappyBLEUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DC63A6E223970F0007B3A02 = {
+			isa = PBXGroup;
+			children = (
+				6DC63A79223970F0007B3A02 /* TappyBLE */,
+				6DC63A90223970F1007B3A02 /* TappyBLETests */,
+				6DC63A9B223970F1007B3A02 /* TappyBLEUITests */,
+				6DC63A78223970F0007B3A02 /* Products */,
+				CFA1110724FBF1890B285D5E /* Pods */,
+				9C32F15B536FB4D2A91301EC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6DC63A78223970F0007B3A02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DC63A77223970F0007B3A02 /* TappyBLE.app */,
+				6DC63A8D223970F1007B3A02 /* TappyBLETests.xctest */,
+				6DC63A98223970F1007B3A02 /* TappyBLEUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DC63A79223970F0007B3A02 /* TappyBLE */ = {
+			isa = PBXGroup;
+			children = (
+				6DC63A83223970F1007B3A02 /* Assets.xcassets */,
+				6DC63A88223970F1007B3A02 /* Info.plist */,
+				6DC63A80223970F0007B3A02 /* Main.storyboard */,
+				6DC63A85223970F1007B3A02 /* LaunchScreen.storyboard */,
+				6DC63A7A223970F0007B3A02 /* AppDelegate.swift */,
+				6D1E36212239880B008D8E19 /* TappyBleManager.swift */,
+				6DC63A7C223970F0007B3A02 /* ConnectTappyViewController.swift */,
+				6DC63A7E223970F0007B3A02 /* LaunchUrlViewController.swift */,
+				6D9A56CA223FFEF200EF523C /* TagReadViewController.swift */,
+				6D9A56CE2240469500EF523C /* TagWriteViewController.swift */,
+				6D9A56CC2240153F00EF523C /* Utils.swift */,
+			);
+			path = TappyBLE;
+			sourceTree = "<group>";
+		};
+		6DC63A90223970F1007B3A02 /* TappyBLETests */ = {
+			isa = PBXGroup;
+			children = (
+				6DC63A91223970F1007B3A02 /* TappyBLETests.swift */,
+				6DC63A93223970F1007B3A02 /* Info.plist */,
+			);
+			path = TappyBLETests;
+			sourceTree = "<group>";
+		};
+		6DC63A9B223970F1007B3A02 /* TappyBLEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6DC63A9C223970F1007B3A02 /* TappyBLEUITests.swift */,
+				6DC63A9E223970F1007B3A02 /* Info.plist */,
+			);
+			path = TappyBLEUITests;
+			sourceTree = "<group>";
+		};
+		9C32F15B536FB4D2A91301EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				609D69249C577DBE0D868708 /* Pods_TappyBLE.framework */,
+				7DCB0B00C46C85442AD167CC /* Pods_TappyBLETests.framework */,
+				FCAC7859C89754DFAA9DDBC0 /* Pods_TappyBLEUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFA1110724FBF1890B285D5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBD9A903950E06F1AE26FEB6 /* Pods-TappyBLE.debug.xcconfig */,
+				0F03D1ED8998827C31B2036D /* Pods-TappyBLE.release.xcconfig */,
+				F1FD90903659B6445A740414 /* Pods-TappyBLETests.debug.xcconfig */,
+				2236AB7C107C2815177A4B09 /* Pods-TappyBLETests.release.xcconfig */,
+				4D1A8AEDA7F3770C049C1C9C /* Pods-TappyBLEUITests.debug.xcconfig */,
+				69FDF63BDEC4FCAEA3AD44D5 /* Pods-TappyBLEUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DC63A76223970F0007B3A02 /* TappyBLE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DC63AA1223970F1007B3A02 /* Build configuration list for PBXNativeTarget "TappyBLE" */;
+			buildPhases = (
+				0CC967EB70C5A84FA5040C3C /* [CP] Check Pods Manifest.lock */,
+				6DC63A73223970F0007B3A02 /* Sources */,
+				6DC63A74223970F0007B3A02 /* Frameworks */,
+				6DC63A75223970F0007B3A02 /* Resources */,
+				1E1E54E90387B924BD37479A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TappyBLE;
+			productName = TappyBLE;
+			productReference = 6DC63A77223970F0007B3A02 /* TappyBLE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DC63A8C223970F1007B3A02 /* TappyBLETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DC63AA4223970F1007B3A02 /* Build configuration list for PBXNativeTarget "TappyBLETests" */;
+			buildPhases = (
+				FB35C41E9E33FF97A7324534 /* [CP] Check Pods Manifest.lock */,
+				6DC63A89223970F1007B3A02 /* Sources */,
+				6DC63A8A223970F1007B3A02 /* Frameworks */,
+				6DC63A8B223970F1007B3A02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DC63A8F223970F1007B3A02 /* PBXTargetDependency */,
+			);
+			name = TappyBLETests;
+			productName = TappyBLETests;
+			productReference = 6DC63A8D223970F1007B3A02 /* TappyBLETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6DC63A97223970F1007B3A02 /* TappyBLEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DC63AA7223970F1007B3A02 /* Build configuration list for PBXNativeTarget "TappyBLEUITests" */;
+			buildPhases = (
+				745754BE7C15ADE7E52CD6F8 /* [CP] Check Pods Manifest.lock */,
+				6DC63A94223970F1007B3A02 /* Sources */,
+				6DC63A95223970F1007B3A02 /* Frameworks */,
+				6DC63A96223970F1007B3A02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DC63A9A223970F1007B3A02 /* PBXTargetDependency */,
+			);
+			name = TappyBLEUITests;
+			productName = TappyBLEUITests;
+			productReference = 6DC63A98223970F1007B3A02 /* TappyBLEUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DC63A6F223970F0007B3A02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = TapTrack;
+				TargetAttributes = {
+					6DC63A76223970F0007B3A02 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.NearFieldCommunicationTagReading = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+					6DC63A8C223970F1007B3A02 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6DC63A76223970F0007B3A02;
+					};
+					6DC63A97223970F1007B3A02 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6DC63A76223970F0007B3A02;
+					};
+				};
+			};
+			buildConfigurationList = 6DC63A72223970F0007B3A02 /* Build configuration list for PBXProject "TappyBLE" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DC63A6E223970F0007B3A02;
+			productRefGroup = 6DC63A78223970F0007B3A02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DC63A76223970F0007B3A02 /* TappyBLE */,
+				6DC63A8C223970F1007B3A02 /* TappyBLETests */,
+				6DC63A97223970F1007B3A02 /* TappyBLEUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DC63A75223970F0007B3A02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC63A87223970F1007B3A02 /* LaunchScreen.storyboard in Resources */,
+				6DC63A84223970F1007B3A02 /* Assets.xcassets in Resources */,
+				6DC63A82223970F0007B3A02 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC63A8B223970F1007B3A02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC63A96223970F1007B3A02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CC967EB70C5A84FA5040C3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TappyBLE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E1E54E90387B924BD37479A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TappyBLE/Pods-TappyBLE-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TappyBLE/Pods-TappyBLE-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TappyBLE/Pods-TappyBLE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		745754BE7C15ADE7E52CD6F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TappyBLEUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB35C41E9E33FF97A7324534 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TappyBLETests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DC63A73223970F0007B3A02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D1E36222239880B008D8E19 /* TappyBleManager.swift in Sources */,
+				6DC63A7F223970F0007B3A02 /* LaunchUrlViewController.swift in Sources */,
+				6DC63A7B223970F0007B3A02 /* AppDelegate.swift in Sources */,
+				6DC63A7D223970F0007B3A02 /* ConnectTappyViewController.swift in Sources */,
+				6D9A56CF2240469500EF523C /* TagWriteViewController.swift in Sources */,
+				6D9A56CB223FFEF200EF523C /* TagReadViewController.swift in Sources */,
+				6D9A56CD2240153F00EF523C /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC63A89223970F1007B3A02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC63A92223970F1007B3A02 /* TappyBLETests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC63A94223970F1007B3A02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC63A9D223970F1007B3A02 /* TappyBLEUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DC63A8F223970F1007B3A02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DC63A76223970F0007B3A02 /* TappyBLE */;
+			targetProxy = 6DC63A8E223970F1007B3A02 /* PBXContainerItemProxy */;
+		};
+		6DC63A9A223970F1007B3A02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DC63A76223970F0007B3A02 /* TappyBLE */;
+			targetProxy = 6DC63A99223970F1007B3A02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DC63A80223970F0007B3A02 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DC63A81223970F0007B3A02 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DC63A85223970F1007B3A02 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DC63A86223970F1007B3A02 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DC63A9F223970F1007B3A02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DC63AA0223970F1007B3A02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DC63AA2223970F1007B3A02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBD9A903950E06F1AE26FEB6 /* Pods-TappyBLE.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DB977HJBEL;
+				INFOPLIST_FILE = TappyBLE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.taptrack.TappyBLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DC63AA3223970F1007B3A02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F03D1ED8998827C31B2036D /* Pods-TappyBLE.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DB977HJBEL;
+				INFOPLIST_FILE = TappyBLE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.taptrack.TappyBLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6DC63AA5223970F1007B3A02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1FD90903659B6445A740414 /* Pods-TappyBLETests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DB977HJBEL;
+				INFOPLIST_FILE = TappyBLETests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TapTrack.TappyBLETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TappyBLE.app/TappyBLE";
+			};
+			name = Debug;
+		};
+		6DC63AA6223970F1007B3A02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2236AB7C107C2815177A4B09 /* Pods-TappyBLETests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DB977HJBEL;
+				INFOPLIST_FILE = TappyBLETests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TapTrack.TappyBLETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TappyBLE.app/TappyBLE";
+			};
+			name = Release;
+		};
+		6DC63AA8223970F1007B3A02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D1A8AEDA7F3770C049C1C9C /* Pods-TappyBLEUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DB977HJBEL;
+				INFOPLIST_FILE = TappyBLEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TapTrack.TappyBLEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TappyBLE;
+			};
+			name = Debug;
+		};
+		6DC63AA9223970F1007B3A02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69FDF63BDEC4FCAEA3AD44D5 /* Pods-TappyBLEUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DB977HJBEL;
+				INFOPLIST_FILE = TappyBLEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TapTrack.TappyBLEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TappyBLE;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DC63A72223970F0007B3A02 /* Build configuration list for PBXProject "TappyBLE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DC63A9F223970F1007B3A02 /* Debug */,
+				6DC63AA0223970F1007B3A02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DC63AA1223970F1007B3A02 /* Build configuration list for PBXNativeTarget "TappyBLE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DC63AA2223970F1007B3A02 /* Debug */,
+				6DC63AA3223970F1007B3A02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DC63AA4223970F1007B3A02 /* Build configuration list for PBXNativeTarget "TappyBLETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DC63AA5223970F1007B3A02 /* Debug */,
+				6DC63AA6223970F1007B3A02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DC63AA7223970F1007B3A02 /* Build configuration list for PBXNativeTarget "TappyBLEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DC63AA8223970F1007B3A02 /* Debug */,
+				6DC63AA9223970F1007B3A02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DC63A6F223970F0007B3A02 /* Project object */;
+}

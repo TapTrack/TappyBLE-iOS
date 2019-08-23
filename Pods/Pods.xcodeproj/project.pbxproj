@@ -1,0 +1,1789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01101FBAA7C9EBE4629F6D9EB4D16F9A /* TappyBleScannerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D86136D82DB48E20A19C651287B51C /* TappyBleScannerStatus.swift */; };
+		031B9DF983CD413E86E5531BE51A3DAC /* TappyBleDeviceDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9CA9E8E6286579B65CBF259EBBC409 /* TappyBleDeviceDefinition.swift */; };
+		05DE222F0F62F4C90C12E9F9FC0761B0 /* DetectType4BTagCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD2DD5C0F31E36C66A3BA2727F4E7D /* DetectType4BTagCommand.swift */; };
+		0BEA534D35BB335193CA7A5081CC95C1 /* WriteNtag21xWithPasswordBytesCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C85F32C663C9E4A1FF6D1A69B664E /* WriteNtag21xWithPasswordBytesCommand.swift */; };
+		0D3281495A24801BC2653D3F5AB46CD5 /* EmulateTextRecordCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB37AE9413AB236453F517726EC3832F /* EmulateTextRecordCommand.swift */; };
+		0D8A02F9953E6F15F57CE60646A5996C /* BasicNFCCommandResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291F90041F9FA7482E2AE0EA748E5172 /* BasicNFCCommandResolver.swift */; };
+		11112052DD4CAA9225A7119A7B98584C /* GetHardwareVersionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631C20E8AE6ACCA0C0675E752285706A /* GetHardwareVersionCommand.swift */; };
+		11A126F27766D4D2945757592AF89350 /* TagFoundResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E86E7483EE2D104B3F7C2B7DC9297A0 /* TagFoundResponse.swift */; };
+		11F215D3F63BF97A3BD2F9808034C8C7 /* WriteNDEFUriCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A138B001774C2A2EC497576CA6282 /* WriteNDEFUriCommand.swift */; };
+		12FE6ADC12363CEE0E406A5BE1E1D8AB /* FeliCaTagEntryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012E6175E621A05E3B788D78EDDAF2CE /* FeliCaTagEntryResponse.swift */; };
+		155D068756F8D2DFD5753D45346E6DBE /* TappyBleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75366F532440124AD9E566BBD05DF0B8 /* TappyBleError.swift */; };
+		16728B3A8685AB912FDB79DE5E834A08 /* Pods-TappyBLE-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCD9C333E20A9ED04A34CBCA0BC0CC1 /* Pods-TappyBLE-dummy.m */; };
+		17413A6C50315B39961660177109FA97 /* Type4PollingErrorDetectedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66DADDE9BA01CFFCDEDC087786D6B /* Type4PollingErrorDetectedResponse.swift */; };
+		1ABFAACC4B73D4368507039AF48C2D4D /* MessageResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D0A7E7CEA310482536D0D08327BD8 /* MessageResolver.swift */; };
+		1C279C4F77F0C0DDFCEE0E8864428F7F /* ReadNdefWithPasswordBytesCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E4991750B569C099C7DBCDCD99F117 /* ReadNdefWithPasswordBytesCommand.swift */; };
+		1DC9F68A52EB6F4F811FECA61D56665B /* GetFirmwareVersionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBE64CFB4A6F6FD01D4BC3966E70147 /* GetFirmwareVersionResponse.swift */; };
+		2024EE5E265681137A9FEBC630E6E0F1 /* Toast-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CBA4DE827ADF8AB0BD77C99E71F967 /* Toast-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21BE8D1A1038129B20AF3DFBA22305C1 /* GetBatteryLevelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAEC116C5E7501367B8B99D4325EC8C /* GetBatteryLevelResponse.swift */; };
+		222494EC87FDF17A4E0AAB328C9F7F84 /* Ntag21xWriteSuccessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C335A2B630D397BF46750F2E4E12D248 /* Ntag21xWriteSuccessResponse.swift */; };
+		222B9449AA8E9671B0A12D5D827DDED3 /* Type2TagExitResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382ABBC1674630BA9FBC4104A899F049 /* Type2TagExitResponse.swift */; };
+		26A3E8CCF8046793BD7D471D8AD2BCC8 /* CommandFamilyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFD99EF42F31F39CA711607B30A3AC7 /* CommandFamilyConstants.swift */; };
+		2EB45F44758250145CDB20ED44B733BB /* WriteNDEFTextCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F3DA9C616CB97B37A1D540BCDD619F /* WriteNDEFTextCommand.swift */; };
+		2FFF5CF06227958464E564A3BFB98E1F /* Ntag21xCommandFamilyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33EFC45198C5504DD86E6B90C413B4 /* Ntag21xCommandFamilyConstants.swift */; };
+		317E771DFF18E3563D1082725B47F120 /* SystemCommandFamilyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A8D1730E023CFB372A30DC74B0BA7A /* SystemCommandFamilyConstants.swift */; };
+		336514EADBD986093A1A033254407292 /* EmulationStoppedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF5EE16963B8682D9BECB46C0C78AB5 /* EmulationStoppedResponse.swift */; };
+		33F1CECCBF210E8AC22D102D14542960 /* TypeISO14443BTagExitResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B4701089D757801F77B0C5149B490 /* TypeISO14443BTagExitResponse.swift */; };
+		36FCAA2181E1DC86F852BBACA2FFDE3D /* StreamNDEFCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77D53462FD1DE8CC9B2D5435EF4280F /* StreamNDEFCommand.swift */; };
+		374FFDFFEAEC2B1FD00099B82E153C1E /* Ntag21xApplicationErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D2B20670EC476703956B8E2FF9DC07 /* Ntag21xApplicationErrorResponse.swift */; };
+		3751EC67E3B03DCF6E2FBEA58C31E79E /* Ntag21xPollingTimeoutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B92E46FB2517B2114DBD9814B4B32B /* Ntag21xPollingTimeoutResponse.swift */; };
+		3D3519C04DB4FE56B1A09DAD095BB9CA /* ScanTagCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2792BE77990E90D2DF59D1FF79D5B051 /* ScanTagCommand.swift */; };
+		3DCE77A331213E840C16843374185FFA /* TCMPMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC75C2483FE4EC3720006CCDB16E14D /* TCMPMessage.swift */; };
+		40AA5BEC022C1213829A968169833EA7 /* TagWrittenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4682198BAA683EA380623D896DCC897 /* TagWrittenResponse.swift */; };
+		4200F44DDA25BD90517507B8367CEC4F /* GetType4CommandFamilyVersionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9204414E4D2560B2EE8671C20515FF /* GetType4CommandFamilyVersionCommand.swift */; };
+		43918EBEE239764ACA3184C4A89F8ADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		45C362225E901C952696668700A8AC0E /* UnrecognizedTagEntryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479AF5AD861E3051663DDF8D6FDA136B /* UnrecognizedTagEntryResponse.swift */; };
+		4753716AE7A1AB22FB6BA61AA74D942F /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDEAEEF62604420737447E9331B0C59 /* Toast.swift */; };
+		4A167365ED2BAD805ECC3A0B53249CE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		4AD2429C6D207F226DF701FFBD4ABBFC /* Tappy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E74DD0160FD26E37692EBC804823B /* Tappy.swift */; };
+		4C98D5EEBC7FA681F14787EFD30BE9DC /* WriteTextNdefWithPasswordCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EC63BFBB168AAD4DA9FDF59893CA93 /* WriteTextNdefWithPasswordCommand.swift */; };
+		5018D8110BC81F9746F18AC2CC4750D7 /* ApplicationErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524ED37563D8C45EA9F9C2695F0B41D /* ApplicationErrorMessage.swift */; };
+		50648EEB521DCBE5746A2CA4F657D2F7 /* NdefLibrary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7EC0A2E5DD6932276259F0909F4A6A /* NdefLibrary-dummy.m */; };
+		5256DEBFF3DB44E7BAE16166846A4BDB /* WriteCustomNdefWithPasswordCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B867404D4A36E0D7349E7D4E1D669ED0 /* WriteCustomNdefWithPasswordCommand.swift */; };
+		53616AF5C3A7A17B00A63E9239D3B256 /* TCMP-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = F025F0CA30FD9E56D57501C95D5904B1 /* TCMP-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5409E6530553BCA3F3D26F9485DF2980 /* TCMPTappy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C6DCECC09150D8CE858FFCCE9580844 /* TCMPTappy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		541FD1622387C5D71C9C35EBF56D866E /* BasicNfcApplicationErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8478DBA05B7F45079EC218B470254E4 /* BasicNfcApplicationErrorMessage.swift */; };
+		554439B71D35E8A11D245A529860870A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		57BA087B81E703F271FCE43ABFED90AD /* TCMPUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92864DC435CEF4409803F687FB82537 /* TCMPUtils.swift */; };
+		59251FDA7139974D8A0E2D0497D136A3 /* WriteUriNdefWithPasswordCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A613CE89FCC1F636D3E29CE122545B0F /* WriteUriNdefWithPasswordCommand.swift */; };
+		5C5312EC1F739254EBA5AB4DCD62E2C6 /* BasicNFCCommandFamilyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB05DAAA69645638616EF4A71B081593 /* BasicNFCCommandFamilyConstants.swift */; };
+		5CCD4817F25B8F0C8D5A0D069B236718 /* AutoPollingTypeISO14443BTagResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859BA355E7C16F1334EB93565B2E051D /* AutoPollingTypeISO14443BTagResponse.swift */; };
+		6040427FF349BF3AE2BA5AB7F6800159 /* WriteTextNdefWithPasswordBytesCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA8FF094903752199CF2C5E7A8F69BC /* WriteTextNdefWithPasswordBytesCommand.swift */; };
+		604E24CFA86F604AE9E7A197932C6808 /* AutoPollingType2TagResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB86B4623A5B7A508C3D0F47F63CE8 /* AutoPollingType2TagResponse.swift */; };
+		61C41B741571434AD5D5C22D0AE731F7 /* SetConfigurationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4519AA2251199A22A6BB05FF94297B /* SetConfigurationResponse.swift */; };
+		61DDA4EB37E57B34509DA2C20B344F53 /* RawTCMPMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E045C45B0F5F5A9FD6B0A5E7BAE0246A /* RawTCMPMessage.swift */; };
+		61FF1AE07A1A9C287F8D1E0098E9C820 /* PingCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FD9D1E67A484686F21F46366AF558E /* PingCommand.swift */; };
+		640C28BCD2551A81E0D94A4FDA6650CE /* SystemErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD93C96CE0477DE9CD776C7781A61EE0 /* SystemErrorResponse.swift */; };
+		6B326644BB08AEDF697A82A0F1A66D68 /* Toast-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 721F8AEDD39CEB51A576474754A40252 /* Toast-Swift-dummy.m */; };
+		6B380E62190BDCAB16329CF688D27199 /* TypeISO14443BTagEntryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BE3BBF4ED8988C26DC731E59119EB0 /* TypeISO14443BTagEntryResponse.swift */; };
+		6DB5206F5DED6E7B2BCBC317E683DFD8 /* Type1TagExitResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF839DA49364C53779344D13DE07B9 /* Type1TagExitResponse.swift */; };
+		7175E6A31709FDCA3904DCBC462AC14C /* AutoPollingType4ATagResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74705707C01D16BC0EA5807C2DD8452D /* AutoPollingType4ATagResponse.swift */; };
+		722FBBCE8A62810EB70B7FF23F9F305D /* TappyBle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA475B9E660152F79C4E3AC5AFD6D53 /* TappyBle.swift */; };
+		73555DA1BED80CCDC550E4094648B3AF /* TappyCentralManagerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56786786DA78A00219F171ABC9AB8305 /* TappyCentralManagerProvider.swift */; };
+		7528C1CF0A805C5516F72A02FC0CAD3C /* UnrecognizedTagExitResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3802094995CC673D2A2027EF552A8B0 /* UnrecognizedTagExitResponse.swift */; };
+		76F125EBE0683A9F5FEFF011412C3C48 /* DetectType4TimeoutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6415B6E7F1DAC8A89B8FDC5CD9480CA7 /* DetectType4TimeoutResponse.swift */; };
+		78E1193491CE65248E337E9A34A55AC3 /* TagTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7F73732667224234B9501819CE5FCF /* TagTypes.swift */; };
+		79446B38E499DD00E786BB770E8F3123 /* TransceiveAPDUCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8BA35805BC8C6112F7EE0DE2930847 /* TransceiveAPDUCommand.swift */; };
+		7C5E5A79471E42CCC37E443F34A4B918 /* TappyBleDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5420EC4E9BA9842E746A55CDAD35C7 /* TappyBleDevice.swift */; };
+		7C7547F0D056464A9BD4366D02B2AA67 /* TCMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5941BA7B07BB37FA98A40ADC33033 /* TCMP.m */; };
+		80158A3598F3F16AE319FF687998F7D4 /* TappyBleCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A68CE4905F7D7E3457EA20C171BEBA8 /* TappyBleCommunicator.swift */; };
+		83557B31F9F4BE07245A39E8B955F767 /* Ndef.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD4974A4210CF70C8C67D4A61047BB /* Ndef.swift */; };
+		83F2AF0845CEA068CC14B741250069AC /* Type4ATagEntryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF071062DC01AE710CA8A9A02603E45 /* Type4ATagEntryResponse.swift */; };
+		85F7DFBD766FA8DF9CB3B65BDF90C293 /* Type2TagEntryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CCA6D6A1E3F00E79DCF872F4A7E503 /* Type2TagEntryResponse.swift */; };
+		85FB62828EE8448AD490217FD34607E7 /* SetConfigurationCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7357E4063EE9612ED3BBCEEC1A63F409 /* SetConfigurationCommand.swift */; };
+		86274734602F1A7A0355AB567295122A /* WriteCustomNDEFCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0E74D8EE1F587AC85BD4BC8B3295DE /* WriteCustomNDEFCommand.swift */; };
+		87D3FD492EB9F19C8C93D650D7352EB2 /* Pods-TappyBLETests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F023E694CB779CBE45805AAF42326C78 /* Pods-TappyBLETests-dummy.m */; };
+		8D28464D6ED2DF7050A67EA7F794459E /* Ntag21xReadSuccessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A9C0D9E4F8A3A84EAF3BA240DEF8B8 /* Ntag21xReadSuccessResponse.swift */; };
+		9448147DCBD790F54F3E27C1B984C7A6 /* TextRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0A679B05C51381313C047B4BDC2786 /* TextRecord.swift */; };
+		95ACABC71585D657249CC92BA7731A8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		95E40E667C74A5E30BE9245BC9AD403C /* TappyBleScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D93A51F06FB1F1E69B6CEF9BB07EB9 /* TappyBleScanner.swift */; };
+		96B5194AE6EC806C265EC096DB9FDBBB /* ScanNDEFCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB0DD0BD83079C83A427F0F3DF9014 /* ScanNDEFCommand.swift */; };
+		9866FF30BC84C91CCA6129B321DCF549 /* WriteNtag21xWithPasswordCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780B3784FC774DC80EAED2EA9A12722A /* WriteNtag21xWithPasswordCommand.swift */; };
+		98696EA0EB059C11D3B0FC6FF9A24159 /* TransceiveAPDUSuccessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4622AC1BF074D9BC3CC1CAAF5FE28832 /* TransceiveAPDUSuccessResponse.swift */; };
+		9B1FE5761F5386AB04842EA3E173BB8D /* ReadNdefWithPasswordCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC4CF4A2635EADB53467EDA02412B39 /* ReadNdefWithPasswordCommand.swift */; };
+		9C26373429F359A3734096F87019954C /* PingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B4E730C85FE906E911D4C02141D071 /* PingResponse.swift */; };
+		9C96D71A6877CFF298AF55E17E986AF4 /* WriteCustomNdefWithPasswordBytesCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1BC0FD059F9BE19581D3D7C9E01D16 /* WriteCustomNdefWithPasswordBytesCommand.swift */; };
+		A17E5E30E48C94F9D7543F3A090518FE /* GetType4CommandFamilyVersionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C98111B8839711BB2B6CEA6C2BF1110 /* GetType4CommandFamilyVersionResponse.swift */; };
+		A3FF542BB1B1B356B52EE0D4C6C03A67 /* Type1TagEntryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF9418CEEDE90EC5760E1BCB9F4CBF1 /* Type1TagEntryResponse.swift */; };
+		A4A6BFE69A78F199CEF1155750FC83A4 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57025B05F04AB8E21F9B092B4DDF0E7 /* Util.swift */; };
+		A5037666225E438C3DBB9300A6AC5645 /* Pods-TappyBLEUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD1A1133FCB7D62BF5D2C51EC46BB40C /* Pods-TappyBLEUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A67F291C16D32D3A454E162D90E8AE3E /* EmulateCustomNDEFRecordCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285AC1EDC194DB2F63C45E2A30DD09F9 /* EmulateCustomNDEFRecordCommand.swift */; };
+		A6E488C75638A7D1B084C9C38775D88F /* TappyStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5E61CA2FFDA8AD9642FEF18CDDA8F1 /* TappyStatus.swift */; };
+		A7E446DD5FEB5DC5312A598F58F459A5 /* GetHardwareVersionReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943F475906ADFBD1F89CFB7658960CDE /* GetHardwareVersionReponse.swift */; };
+		AD05C0627E1283C764D23019E0C918E3 /* GetNtag21xCommandFamilyVersionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED78A1C00358D9BAF8A474AB0FBD969 /* GetNtag21xCommandFamilyVersionResponse.swift */; };
+		ADC9DB3F9140C7B550C7458BA6946B63 /* NdefMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F3A0FF5E2D0E62CF7504E574AB08E /* NdefMessage.swift */; };
+		AF0011EA2A40FFC83A53ADCEE7D869A2 /* PollingModes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA1E5F42CEAFECD507E99AC35F315E0 /* PollingModes.swift */; };
+		B0778307E8B5CD063C6C3C09FBCF2684 /* TappySerialCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB0FEC5881AD77EAD65A39D77E22109 /* TappySerialCommunicator.swift */; };
+		B07D78FEBD4A70B0E0227BF7D26E4351 /* Type4ATagExitResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54900AF55C913D610F31FA7CFEF886E3 /* Type4ATagExitResponse.swift */; };
+		B13F6B78F087E243FD41EC7A85A0586E /* StreamTagCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5211D20387AE6E653AE747E20B41E0E /* StreamTagCommand.swift */; };
+		B3040DE1A9ABB7E6F3C2DF45384CEB64 /* NdefRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B67264BA4B4E2F7B14A2AB97B614D9 /* NdefRecord.swift */; };
+		B68093DFFF2113DE53B8C56FC59C2FB6 /* AutoPollingType1TagResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD62DAF68ABD0B9FB7CF062324A3929E /* AutoPollingType1TagResponse.swift */; };
+		B81F3F3FCEF421E1AFF346E1851A409F /* DetectType4BTagWithAFICommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246426520B36625BE0AB853C354277CF /* DetectType4BTagWithAFICommand.swift */; };
+		B92435DA21CEFF0B0CCEB088497260B4 /* Type4ATagDetectedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098DB5CB1CBBE2ED56A9CB4BC7A5BB7 /* Type4ATagDetectedResponse.swift */; };
+		BAD8058C9263E5CF8685948A61EA67ED /* GetNtag21xCommandFamilyVersionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F327408D2F58A1F17D18207F3E8DC3 /* GetNtag21xCommandFamilyVersionCommand.swift */; };
+		BC0D45576906D95458B5C037F8C4DBED /* OutputTestFramesCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5315B1D44C52F86B97923D0E5F38184B /* OutputTestFramesCommand.swift */; };
+		BCF74E37F46E33ADDBEAE850C0CF0F09 /* WriteUriNdefWithPasswordBytesCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8F032825C868F275FA35FC057B762A /* WriteUriNdefWithPasswordBytesCommand.swift */; };
+		BEE832A0250A1E5BCB95D739956DB2E2 /* DetectType4ATagCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B36B4C456EF1385955A96E084A6272E /* DetectType4ATagCommand.swift */; };
+		BFD9CE97ED64B177CB462D9910BC83BF /* TCMPTappy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3F339AA1DB4AF100BF919C1245D439 /* TCMPTappy-dummy.m */; };
+		C06D290B9216533843023A0BF93F5927 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */; };
+		C387F6D8870B40A1626DA4D3A2E45816 /* GetFirmwareVersionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C21296DCB1782813BE09C49464436 /* GetFirmwareVersionCommand.swift */; };
+		C5DF8D5A0D14B632AD1E56AC8CD7C79E /* Type4CommandResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28CF9489E36D1384C0282AABBE99CB1 /* Type4CommandResolver.swift */; };
+		C725F80F41E3C9E4B34AD84B00FF0B07 /* NdefLibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28C4978A5E9FFE9E1CA1E61004FA2718 /* NdefLibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC6A27F43485CFBB9E07010FE9E126C8 /* TCMP.h in Headers */ = {isa = PBXBuildFile; fileRef = A05870533F0DEC75644F8EF019E4C53B /* TCMP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDCE0ECB64B1AC7DA0B4DD16B37B583D /* Ntag21xCommandResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BC51830DA5F3B12A9AE72E603EDC60 /* Ntag21xCommandResolver.swift */; };
+		D23E0B97B234582B952C099B6A96DE45 /* AutoPollingCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F807B2FA7D25ED26C9B2B26DFADD79F3 /* AutoPollingCommand.swift */; };
+		D24CEF4C9828DD6A1BDE132727071144 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		D41E71761FFB03570552C13E6456DBC4 /* EmulateURIRecordCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14618FF4330D332ED7268B470133270 /* EmulateURIRecordCommand.swift */; };
+		D518169BA72F56D05F0A47E0390009A4 /* StopCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5ACA8C9F6AE299B529831AA02170FE /* StopCommand.swift */; };
+		D6BB15C5A252A479F957B4E167A34FF5 /* SystemCommandResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E43981D54C2B927E09B6109F5AA0A58 /* SystemCommandResolver.swift */; };
+		DA4BF77B11BA6E61900EBE8C1A5E343F /* Pods-TappyBLETests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C66DB3B5B4733745EAE28CEA115A84A /* Pods-TappyBLETests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB00AD26E17A15C8EA3A7989453EC5B7 /* SerialTappy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C51D00CABC86187FA9CC437B26DA0DE /* SerialTappy.swift */; };
+		DCEE8AA1952A13C55714BEB018A598B8 /* Pods-TappyBLEUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC84FFA20835A52708BE322C563182 /* Pods-TappyBLEUITests-dummy.m */; };
+		DE970D6A3F891F9830F6EB6A031FBF97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		E22436EDF2BB25ED43E2293B881E8C67 /* LockingModes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80B37A952549AD5884EDB5AD161B239 /* LockingModes.swift */; };
+		E74EA2E31F52AF41330D0D4DE3E11D2E /* GenericRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07B44B4D7D3C2EED1CEAA6BD156C475 /* GenericRecord.swift */; };
+		EAFED1800174FD0ACD3175568C5935BD /* SystemApplicationErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C919437BB72C3738A6A08D383D67F7CB /* SystemApplicationErrorResponse.swift */; };
+		EBB036156E02BDE77C7A1A2C642FE0DC /* FeliCaTagExitResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15181AB94C6C1B8016592A9F3270C186 /* FeliCaTagExitResponse.swift */; };
+		F2C2FF8E9831FC5C124EBB986C82C96B /* UriRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF91A87F0DFB6B95F3A1090A90CBF6C /* UriRecord.swift */; };
+		F301EDBB449427CC662DDD18C30FC12E /* Type4ApplicationErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC67588FA617D5978ED4E5F4E893A9C /* Type4ApplicationErrorResponse.swift */; };
+		F3EACFEA91E1C9DB982DC256B51423F6 /* Pods-TappyBLE-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD1611450A9172E3493830C6B38DE094 /* Pods-TappyBLE-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9290B0AEB3971804E3EB05C33D05C8C /* EmulationSuccessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6247CED40CC2176554E8ED11EC867EDF /* EmulationSuccessResponse.swift */; };
+		F96286AAEB716CAC952927073AE3061B /* GetBatteryLevelCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B065707342666C2E1FD030D1BBA7229A /* GetBatteryLevelCommand.swift */; };
+		F9AC342B0DEAD4195B9DEE5CE4111890 /* AutoPollingFeliCaTagResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475336E113043AC657C79250EE91533 /* AutoPollingFeliCaTagResponse.swift */; };
+		FA5FEF2D0CAFAB25A57BDDED96463A63 /* OutputTestFramesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8BD6812142A8E94CA1D9142ED52018 /* OutputTestFramesResponse.swift */; };
+		FB62DA18EE5D85F116F33779668EB727 /* NDEFFoundResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D3441540013603C9E96A9A82A453C1 /* NDEFFoundResponse.swift */; };
+		FDF3B7C4464BBF03942BA93474BB6C5C /* Type4BTagDetectedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A21F3F18C757F669DC056D4E2B4895 /* Type4BTagDetectedResponse.swift */; };
+		FEAD216D07A1C167A0434F294D64E6F0 /* Type4CommandFamilyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF177432B4CF3FD7E3C58A9E7B4089 /* Type4CommandFamilyConstants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38400415382CA45081D29A31FE9AEFFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B990BD87169C76A3ED3FE8A9258D91A3;
+			remoteInfo = "Toast-Swift";
+		};
+		959BF0304C8B49FEEA754459E473655C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B4269F07106FB9BA2B502F46C46D3DD;
+			remoteInfo = "Pods-TappyBLE";
+		};
+		A75F7E4BE71DEF873F7875F299C4635F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B4269F07106FB9BA2B502F46C46D3DD;
+			remoteInfo = "Pods-TappyBLE";
+		};
+		C946DCA35FD7EE624F44FA7004A7499C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 729F0D970752503B88977878A2B04869;
+			remoteInfo = NdefLibrary;
+		};
+		CE9F23773603C521ED7F005EE556F398 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34024AB0179833EDA913C84148F360C7;
+			remoteInfo = TCMPTappy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00F327408D2F58A1F17D18207F3E8DC3 /* GetNtag21xCommandFamilyVersionCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GetNtag21xCommandFamilyVersionCommand.swift; path = TCMP/Ntag21xCommandFamily/Commands/GetNtag21xCommandFamilyVersionCommand.swift; sourceTree = "<group>"; };
+		012E6175E621A05E3B788D78EDDAF2CE /* FeliCaTagEntryResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeliCaTagEntryResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/FeliCaTagEntryResponse.swift"; sourceTree = "<group>"; };
+		04154DE28B40F9F6D2AE5195B91AB79D /* NdefLibrary-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NdefLibrary-Info.plist"; sourceTree = "<group>"; };
+		04D5941BA7B07BB37FA98A40ADC33033 /* TCMP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TCMP.m; path = TCMP/TCMP.m; sourceTree = "<group>"; };
+		05354D71777B9778156E93451D37077E /* Pods-TappyBLETests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TappyBLETests.debug.xcconfig"; sourceTree = "<group>"; };
+		064E217B5464362731A374732BD2CA32 /* Pods-TappyBLEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TappyBLEUITests.release.xcconfig"; sourceTree = "<group>"; };
+		07D3441540013603C9E96A9A82A453C1 /* NDEFFoundResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NDEFFoundResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/NDEFFoundResponse.swift"; sourceTree = "<group>"; };
+		08CBA4DE827ADF8AB0BD77C99E71F967 /* Toast-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-umbrella.h"; sourceTree = "<group>"; };
+		0C98111B8839711BB2B6CEA6C2BF1110 /* GetType4CommandFamilyVersionResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GetType4CommandFamilyVersionResponse.swift; path = TCMP/Type4CommandFamily/Responses/GetType4CommandFamilyVersionResponse.swift; sourceTree = "<group>"; };
+		0E43981D54C2B927E09B6109F5AA0A58 /* SystemCommandResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SystemCommandResolver.swift; path = TCMP/SystemCommandFamily/SystemCommandResolver.swift; sourceTree = "<group>"; };
+		12CCA6D6A1E3F00E79DCF872F4A7E503 /* Type2TagEntryResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Type2TagEntryResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/Type2TagEntryResponse.swift"; sourceTree = "<group>"; };
+		14B3BD0D226F8535359F2EB65C2AC3A1 /* TCMPTappy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TCMPTappy.modulemap; sourceTree = "<group>"; };
+		15181AB94C6C1B8016592A9F3270C186 /* FeliCaTagExitResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeliCaTagExitResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/FeliCaTagExitResponse.swift"; sourceTree = "<group>"; };
+		19F23BD54A0CD9ACBC98401598475B7F /* Pods-TappyBLEUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TappyBLEUITests.modulemap"; sourceTree = "<group>"; };
+		1A5FC9CFDE611677E1204A622CD0D14B /* Toast-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.xcconfig"; sourceTree = "<group>"; };
+		1A68CE4905F7D7E3457EA20C171BEBA8 /* TappyBleCommunicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TappyBleCommunicator.swift; path = TappyBle/TappyBleCommunicator.swift; sourceTree = "<group>"; };
+		1CBE64CFB4A6F6FD01D4BC3966E70147 /* GetFirmwareVersionResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GetFirmwareVersionResponse.swift; path = TCMP/SystemCommandFamily/Responses/GetFirmwareVersionResponse.swift; sourceTree = "<group>"; };
+		1D1BC0FD059F9BE19581D3D7C9E01D16 /* WriteCustomNdefWithPasswordBytesCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WriteCustomNdefWithPasswordBytesCommand.swift; path = TCMP/Ntag21xCommandFamily/Commands/WriteCustomNdefWithPasswordBytesCommand.swift; sourceTree = "<group>"; };
+		1D5ACA8C9F6AE299B529831AA02170FE /* StopCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StopCommand.swift; path = "TCMP/BasicNFC-CommandFamily/commands/StopCommand.swift"; sourceTree = "<group>"; };
+		237DA0FD82AAE6A6B8924094FA890352 /* Pods-TappyBLETests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TappyBLETests.modulemap"; sourceTree = "<group>"; };
+		246426520B36625BE0AB853C354277CF /* DetectType4BTagWithAFICommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DetectType4BTagWithAFICommand.swift; path = TCMP/Type4CommandFamily/Commands/DetectType4BTagWithAFICommand.swift; sourceTree = "<group>"; };
+		24A9C0D9E4F8A3A84EAF3BA240DEF8B8 /* Ntag21xReadSuccessResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ntag21xReadSuccessResponse.swift; path = TCMP/Ntag21xCommandFamily/Responses/Ntag21xReadSuccessResponse.swift; sourceTree = "<group>"; };
+		2792BE77990E90D2DF59D1FF79D5B051 /* ScanTagCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScanTagCommand.swift; path = "TCMP/BasicNFC-CommandFamily/commands/ScanTagCommand.swift"; sourceTree = "<group>"; };
+		285AC1EDC194DB2F63C45E2A30DD09F9 /* EmulateCustomNDEFRecordCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmulateCustomNDEFRecordCommand.swift; path = "TCMP/BasicNFC-CommandFamily/commands/EmulateCustomNDEFRecordCommand.swift"; sourceTree = "<group>"; };
+		28C4978A5E9FFE9E1CA1E61004FA2718 /* NdefLibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NdefLibrary-umbrella.h"; sourceTree = "<group>"; };
+		2902C5BF532DEE7EE865BF5E1C91EE3D /* Pods_TappyBLE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TappyBLE.framework; path = "Pods-TappyBLE.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		291F90041F9FA7482E2AE0EA748E5172 /* BasicNFCCommandResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicNFCCommandResolver.swift; path = "TCMP/BasicNFC-CommandFamily/BasicNFCCommandResolver.swift"; sourceTree = "<group>"; };
+		29BE3BBF4ED8988C26DC731E59119EB0 /* TypeISO14443BTagEntryResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypeISO14443BTagEntryResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/TypeISO14443BTagEntryResponse.swift"; sourceTree = "<group>"; };
+		29EC63BFBB168AAD4DA9FDF59893CA93 /* WriteTextNdefWithPasswordCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WriteTextNdefWithPasswordCommand.swift; path = TCMP/Ntag21xCommandFamily/Commands/WriteTextNdefWithPasswordCommand.swift; sourceTree = "<group>"; };
+		2A9CA9E8E6286579B65CBF259EBBC409 /* TappyBleDeviceDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TappyBleDeviceDefinition.swift; path = TappyBle/TappyBleDeviceDefinition.swift; sourceTree = "<group>"; };
+		2AF071062DC01AE710CA8A9A02603E45 /* Type4ATagEntryResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Type4ATagEntryResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/Type4ATagEntryResponse.swift"; sourceTree = "<group>"; };
+		2AF91A87F0DFB6B95F3A1090A90CBF6C /* UriRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UriRecord.swift; path = NdefLibrary/Classes/UriRecord.swift; sourceTree = "<group>"; };
+		2AF9418CEEDE90EC5760E1BCB9F4CBF1 /* Type1TagEntryResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Type1TagEntryResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/Type1TagEntryResponse.swift"; sourceTree = "<group>"; };
+		2C7A2044B53D148D503DCE011FE3AA36 /* Pods-TappyBLE-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TappyBLE-acknowledgements.plist"; sourceTree = "<group>"; };
+		2E5420EC4E9BA9842E746A55CDAD35C7 /* TappyBleDevice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TappyBleDevice.swift; path = TappyBle/TappyBleDevice.swift; sourceTree = "<group>"; };
+		31C8A59AB0A24752EBB61A8D533BB8F1 /* NdefLibrary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NdefLibrary-prefix.pch"; sourceTree = "<group>"; };
+		356F3A0FF5E2D0E62CF7504E574AB08E /* NdefMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NdefMessage.swift; path = NdefLibrary/Classes/NdefMessage.swift; sourceTree = "<group>"; };
+		382ABBC1674630BA9FBC4104A899F049 /* Type2TagExitResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Type2TagExitResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/Type2TagExitResponse.swift"; sourceTree = "<group>"; };
+		3FB63612FFC2DD87F76299B7F401BA62 /* Pods-TappyBLE-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TappyBLE-frameworks.sh"; sourceTree = "<group>"; };
+		4622AC1BF074D9BC3CC1CAAF5FE28832 /* TransceiveAPDUSuccessResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransceiveAPDUSuccessResponse.swift; path = TCMP/Type4CommandFamily/Responses/TransceiveAPDUSuccessResponse.swift; sourceTree = "<group>"; };
+		479AF5AD861E3051663DDF8D6FDA136B /* UnrecognizedTagEntryResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnrecognizedTagEntryResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/UnrecognizedTagEntryResponse.swift"; sourceTree = "<group>"; };
+		4A8C21296DCB1782813BE09C49464436 /* GetFirmwareVersionCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GetFirmwareVersionCommand.swift; path = TCMP/SystemCommandFamily/Commands/GetFirmwareVersionCommand.swift; sourceTree = "<group>"; };
+		4DB43FD0EF92E0FFEFF92D6615BDFD4B /* TCMPTappy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TCMPTappy.xcconfig; sourceTree = "<group>"; };
+		4F282BDE2AD23B83B91241C06F109392 /* Pods-TappyBLE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TappyBLE.release.xcconfig"; sourceTree = "<group>"; };
+		4F7F73732667224234B9501819CE5FCF /* TagTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagTypes.swift; path = TCMP/TagTypes.swift; sourceTree = "<group>"; };
+		4F8BD6812142A8E94CA1D9142ED52018 /* OutputTestFramesResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OutputTestFramesResponse.swift; path = TCMP/SystemCommandFamily/Responses/OutputTestFramesResponse.swift; sourceTree = "<group>"; };
+		50BE8E8933D4D9990D0DEF7311CA7FD9 /* NdefLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NdefLibrary.framework; path = NdefLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51B67264BA4B4E2F7B14A2AB97B614D9 /* NdefRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NdefRecord.swift; path = NdefLibrary/Classes/NdefRecord.swift; sourceTree = "<group>"; };
+		5315B1D44C52F86B97923D0E5F38184B /* OutputTestFramesCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OutputTestFramesCommand.swift; path = TCMP/SystemCommandFamily/Commands/OutputTestFramesCommand.swift; sourceTree = "<group>"; };
+		54900AF55C913D610F31FA7CFEF886E3 /* Type4ATagExitResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Type4ATagExitResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/Type4ATagExitResponse.swift"; sourceTree = "<group>"; };
+		54CCCE2EA1284903B4C853A04055F9A1 /* Pods-TappyBLEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TappyBLEUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		56786786DA78A00219F171ABC9AB8305 /* TappyCentralManagerProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TappyCentralManagerProvider.swift; path = TappyBle/TappyCentralManagerProvider.swift; sourceTree = "<group>"; };
+		56B92E46FB2517B2114DBD9814B4B32B /* Ntag21xPollingTimeoutResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ntag21xPollingTimeoutResponse.swift; path = TCMP/Ntag21xCommandFamily/Responses/Ntag21xPollingTimeoutResponse.swift; sourceTree = "<group>"; };
+		575841B0108A5101D13CB501A778191B /* Pods-TappyBLE-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TappyBLE-Info.plist"; sourceTree = "<group>"; };
+		5B36B4C456EF1385955A96E084A6272E /* DetectType4ATagCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DetectType4ATagCommand.swift; path = TCMP/Type4CommandFamily/Commands/DetectType4ATagCommand.swift; sourceTree = "<group>"; };
+		5C6DCECC09150D8CE858FFCCE9580844 /* TCMPTappy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TCMPTappy-umbrella.h"; sourceTree = "<group>"; };
+		5E86E7483EE2D104B3F7C2B7DC9297A0 /* TagFoundResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagFoundResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/TagFoundResponse.swift"; sourceTree = "<group>"; };
+		5ED78A1C00358D9BAF8A474AB0FBD969 /* GetNtag21xCommandFamilyVersionResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GetNtag21xCommandFamilyVersionResponse.swift; path = TCMP/Ntag21xCommandFamily/Responses/GetNtag21xCommandFamilyVersionResponse.swift; sourceTree = "<group>"; };
+		6247CED40CC2176554E8ED11EC867EDF /* EmulationSuccessResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmulationSuccessResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/EmulationSuccessResponse.swift"; sourceTree = "<group>"; };
+		631C20E8AE6ACCA0C0675E752285706A /* GetHardwareVersionCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GetHardwareVersionCommand.swift; path = TCMP/SystemCommandFamily/Commands/GetHardwareVersionCommand.swift; sourceTree = "<group>"; };
+		6415B6E7F1DAC8A89B8FDC5CD9480CA7 /* DetectType4TimeoutResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DetectType4TimeoutResponse.swift; path = TCMP/Type4CommandFamily/Responses/DetectType4TimeoutResponse.swift; sourceTree = "<group>"; };
+		66D86136D82DB48E20A19C651287B51C /* TappyBleScannerStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TappyBleScannerStatus.swift; path = TappyBle/TappyBleScannerStatus.swift; sourceTree = "<group>"; };
+		67C120B391FE10EFAD2676DD277661F9 /* Pods_TappyBLETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TappyBLETests.framework; path = "Pods-TappyBLETests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AAF839DA49364C53779344D13DE07B9 /* Type1TagExitResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Type1TagExitResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/Type1TagExitResponse.swift"; sourceTree = "<group>"; };
+		6C3F339AA1DB4AF100BF919C1245D439 /* TCMPTappy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TCMPTappy-dummy.m"; sourceTree = "<group>"; };
+		6C51D00CABC86187FA9CC437B26DA0DE /* SerialTappy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SerialTappy.swift; path = TappyReader/SerialTappy.swift; sourceTree = "<group>"; };
+		6E1029783FC3CF5866D65D390BC44D6A /* TCMPTappy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TCMPTappy-prefix.pch"; sourceTree = "<group>"; };
+		6EE3F496C2A733DBE525B5FE5BA4C457 /* Pods-TappyBLEUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TappyBLEUITests-Info.plist"; sourceTree = "<group>"; };
+		721F8AEDD39CEB51A576474754A40252 /* Toast-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-Swift-dummy.m"; sourceTree = "<group>"; };
+		7357E4063EE9612ED3BBCEEC1A63F409 /* SetConfigurationCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SetConfigurationCommand.swift; path = TCMP/SystemCommandFamily/Commands/SetConfigurationCommand.swift; sourceTree = "<group>"; };
+		74705707C01D16BC0EA5807C2DD8452D /* AutoPollingType4ATagResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoPollingType4ATagResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/AutoPollingType4ATagResponse.swift"; sourceTree = "<group>"; };
+		75366F532440124AD9E566BBD05DF0B8 /* TappyBleError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TappyBleError.swift; path = TappyBle/TappyBleError.swift; sourceTree = "<group>"; };
+		780B3784FC774DC80EAED2EA9A12722A /* WriteNtag21xWithPasswordCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WriteNtag21xWithPasswordCommand.swift; path = TCMP/Ntag21xCommandFamily/Commands/WriteNtag21xWithPasswordCommand.swift; sourceTree = "<group>"; };
+		7B5643D98B38669AAB3228775D381EF8 /* TCMPTappy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TCMPTappy-Info.plist"; sourceTree = "<group>"; };
+		7CB0FEC5881AD77EAD65A39D77E22109 /* TappySerialCommunicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TappySerialCommunicator.swift; path = TappyReader/TappySerialCommunicator.swift; sourceTree = "<group>"; };
+		80B4E730C85FE906E911D4C02141D071 /* PingResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PingResponse.swift; path = TCMP/SystemCommandFamily/Responses/PingResponse.swift; sourceTree = "<group>"; };
+		83BF177432B4CF3FD7E3C58A9E7B4089 /* Type4CommandFamilyConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Type4CommandFamilyConstants.swift; path = TCMP/Type4CommandFamily/Type4CommandFamilyConstants.swift; sourceTree = "<group>"; };
+		859BA355E7C16F1334EB93565B2E051D /* AutoPollingTypeISO14443BTagResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoPollingTypeISO14443BTagResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/AutoPollingTypeISO14443BTagResponse.swift"; sourceTree = "<group>"; };
+		86D93A51F06FB1F1E69B6CEF9BB07EB9 /* TappyBleScanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TappyBleScanner.swift; path = TappyBle/TappyBleScanner.swift; sourceTree = "<group>"; };
+		8AC75C2483FE4EC3720006CCDB16E14D /* TCMPMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCMPMessage.swift; path = TCMP/TCMPMessage.swift; sourceTree = "<group>"; };
+		8B3D0A7E7CEA310482536D0D08327BD8 /* MessageResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageResolver.swift; path = TCMP/MessageResolver.swift; sourceTree = "<group>"; };
+		8ECC493794700289AED9727B798E7FDF /* Pods-TappyBLETests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TappyBLETests-Info.plist"; sourceTree = "<group>"; };
+		9098DB5CB1CBBE2ED56A9CB4BC7A5BB7 /* Type4ATagDetectedResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Type4ATagDetectedResponse.swift; path = TCMP/Type4CommandFamily/Responses/Type4ATagDetectedResponse.swift; sourceTree = "<group>"; };
+		93DF6FE2D1343A494702B52C531447C1 /* Pods-TappyBLETests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TappyBLETests-acknowledgements.plist"; sourceTree = "<group>"; };
+		943F475906ADFBD1F89CFB7658960CDE /* GetHardwareVersionReponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GetHardwareVersionReponse.swift; path = TCMP/SystemCommandFamily/Responses/GetHardwareVersionReponse.swift; sourceTree = "<group>"; };
+		95F3DA9C616CB97B37A1D540BCDD619F /* WriteNDEFTextCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WriteNDEFTextCommand.swift; path = "TCMP/BasicNFC-CommandFamily/commands/WriteNDEFTextCommand.swift"; sourceTree = "<group>"; };
+		98BC51830DA5F3B12A9AE72E603EDC60 /* Ntag21xCommandResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ntag21xCommandResolver.swift; path = TCMP/Ntag21xCommandFamily/Ntag21xCommandResolver.swift; sourceTree = "<group>"; };
+		9C66DB3B5B4733745EAE28CEA115A84A /* Pods-TappyBLETests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TappyBLETests-umbrella.h"; sourceTree = "<group>"; };
+		9D2B7AA82AFCBB3DDF278ACD9B5970E3 /* Pods-TappyBLEUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TappyBLEUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E4B4701089D757801F77B0C5149B490 /* TypeISO14443BTagExitResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypeISO14443BTagExitResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/TypeISO14443BTagExitResponse.swift"; sourceTree = "<group>"; };
+		9E6A138B001774C2A2EC497576CA6282 /* WriteNDEFUriCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WriteNDEFUriCommand.swift; path = "TCMP/BasicNFC-CommandFamily/commands/WriteNDEFUriCommand.swift"; sourceTree = "<group>"; };
+		A05870533F0DEC75644F8EF019E4C53B /* TCMP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TCMP.h; path = TCMP/TCMP.h; sourceTree = "<group>"; };
+		A0A21F3F18C757F669DC056D4E2B4895 /* Type4BTagDetectedResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Type4BTagDetectedResponse.swift; path = TCMP/Type4CommandFamily/Responses/Type4BTagDetectedResponse.swift; sourceTree = "<group>"; };
+		A116C629A8A81C130D0F0F8C7B1E8D32 /* NdefLibrary.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NdefLibrary.xcconfig; sourceTree = "<group>"; };
+		A3802094995CC673D2A2027EF552A8B0 /* UnrecognizedTagExitResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnrecognizedTagExitResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/UnrecognizedTagExitResponse.swift"; sourceTree = "<group>"; };
+		A524ED37563D8C45EA9F9C2695F0B41D /* ApplicationErrorMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApplicationErrorMessage.swift; path = TCMP/ApplicationErrorMessage.swift; sourceTree = "<group>"; };
+		A5BB86B4623A5B7A508C3D0F47F63CE8 /* AutoPollingType2TagResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoPollingType2TagResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/AutoPollingType2TagResponse.swift"; sourceTree = "<group>"; };
+		A613CE89FCC1F636D3E29CE122545B0F /* WriteUriNdefWithPasswordCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WriteUriNdefWithPasswordCommand.swift; path = TCMP/Ntag21xCommandFamily/Commands/WriteUriNdefWithPasswordCommand.swift; sourceTree = "<group>"; };
+		AB05DAAA69645638616EF4A71B081593 /* BasicNFCCommandFamilyConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicNFCCommandFamilyConstants.swift; path = "TCMP/BasicNFC-CommandFamily/BasicNFCCommandFamilyConstants.swift"; sourceTree = "<group>"; };
+		AB37AE9413AB236453F517726EC3832F /* EmulateTextRecordCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmulateTextRecordCommand.swift; path = "TCMP/BasicNFC-CommandFamily/commands/EmulateTextRecordCommand.swift"; sourceTree = "<group>"; };
+		ABA8FF094903752199CF2C5E7A8F69BC /* WriteTextNdefWithPasswordBytesCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WriteTextNdefWithPasswordBytesCommand.swift; path = TCMP/Ntag21xCommandFamily/Commands/WriteTextNdefWithPasswordBytesCommand.swift; sourceTree = "<group>"; };
+		ABF5EE16963B8682D9BECB46C0C78AB5 /* EmulationStoppedResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmulationStoppedResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/EmulationStoppedResponse.swift"; sourceTree = "<group>"; };
+		AC33EFC45198C5504DD86E6B90C413B4 /* Ntag21xCommandFamilyConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ntag21xCommandFamilyConstants.swift; path = TCMP/Ntag21xCommandFamily/Ntag21xCommandFamilyConstants.swift; sourceTree = "<group>"; };
+		ADD66DADDE9BA01CFFCDEDC087786D6B /* Type4PollingErrorDetectedResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Type4PollingErrorDetectedResponse.swift; path = TCMP/Type4CommandFamily/Responses/Type4PollingErrorDetectedResponse.swift; sourceTree = "<group>"; };
+		ADDB0DD0BD83079C83A427F0F3DF9014 /* ScanNDEFCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScanNDEFCommand.swift; path = "TCMP/BasicNFC-CommandFamily/commands/ScanNDEFCommand.swift"; sourceTree = "<group>"; };
+		AE9204414E4D2560B2EE8671C20515FF /* GetType4CommandFamilyVersionCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GetType4CommandFamilyVersionCommand.swift; path = TCMP/Type4CommandFamily/Commands/GetType4CommandFamilyVersionCommand.swift; sourceTree = "<group>"; };
+		AEA475B9E660152F79C4E3AC5AFD6D53 /* TappyBle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TappyBle.swift; path = TappyBle/TappyBle.swift; sourceTree = "<group>"; };
+		B065707342666C2E1FD030D1BBA7229A /* GetBatteryLevelCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GetBatteryLevelCommand.swift; path = TCMP/SystemCommandFamily/Commands/GetBatteryLevelCommand.swift; sourceTree = "<group>"; };
+		B1FC84FFA20835A52708BE322C563182 /* Pods-TappyBLEUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TappyBLEUITests-dummy.m"; sourceTree = "<group>"; };
+		B475336E113043AC657C79250EE91533 /* AutoPollingFeliCaTagResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoPollingFeliCaTagResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/AutoPollingFeliCaTagResponse.swift"; sourceTree = "<group>"; };
+		B4CB43AAD5D457B96FE64ED79C74A8C8 /* Pods-TappyBLE-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TappyBLE-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B57025B05F04AB8E21F9B092B4DDF0E7 /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Util.swift; path = TCMP/Util.swift; sourceTree = "<group>"; };
+		B5D2B20670EC476703956B8E2FF9DC07 /* Ntag21xApplicationErrorResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ntag21xApplicationErrorResponse.swift; path = TCMP/Ntag21xCommandFamily/Responses/Ntag21xApplicationErrorResponse.swift; sourceTree = "<group>"; };
+		B7FD9D1E67A484686F21F46366AF558E /* PingCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PingCommand.swift; path = TCMP/SystemCommandFamily/Commands/PingCommand.swift; sourceTree = "<group>"; };
+		B8478DBA05B7F45079EC218B470254E4 /* BasicNfcApplicationErrorMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicNfcApplicationErrorMessage.swift; path = "TCMP/BasicNFC-CommandFamily/responses/BasicNfcApplicationErrorMessage.swift"; sourceTree = "<group>"; };
+		B867404D4A36E0D7349E7D4E1D669ED0 /* WriteCustomNdefWithPasswordCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WriteCustomNdefWithPasswordCommand.swift; path = TCMP/Ntag21xCommandFamily/Commands/WriteCustomNdefWithPasswordCommand.swift; sourceTree = "<group>"; };
+		B91C85F32C663C9E4A1FF6D1A69B664E /* WriteNtag21xWithPasswordBytesCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WriteNtag21xWithPasswordBytesCommand.swift; path = TCMP/Ntag21xCommandFamily/Commands/WriteNtag21xWithPasswordBytesCommand.swift; sourceTree = "<group>"; };
+		BAC4CF4A2635EADB53467EDA02412B39 /* ReadNdefWithPasswordCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReadNdefWithPasswordCommand.swift; path = TCMP/Ntag21xCommandFamily/Commands/ReadNdefWithPasswordCommand.swift; sourceTree = "<group>"; };
+		BCFD99EF42F31F39CA711607B30A3AC7 /* CommandFamilyConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommandFamilyConstants.swift; path = TCMP/CommandFamilyConstants.swift; sourceTree = "<group>"; };
+		BD62DAF68ABD0B9FB7CF062324A3929E /* AutoPollingType1TagResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoPollingType1TagResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/AutoPollingType1TagResponse.swift"; sourceTree = "<group>"; };
+		BE8F032825C868F275FA35FC057B762A /* WriteUriNdefWithPasswordBytesCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WriteUriNdefWithPasswordBytesCommand.swift; path = TCMP/Ntag21xCommandFamily/Commands/WriteUriNdefWithPasswordBytesCommand.swift; sourceTree = "<group>"; };
+		BFE086CFD373A67B751AD2ACA10609C2 /* Pods_TappyBLEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TappyBLEUITests.framework; path = "Pods-TappyBLEUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C335A2B630D397BF46750F2E4E12D248 /* Ntag21xWriteSuccessResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ntag21xWriteSuccessResponse.swift; path = TCMP/Ntag21xCommandFamily/Responses/Ntag21xWriteSuccessResponse.swift; sourceTree = "<group>"; };
+		C3AD4974A4210CF70C8C67D4A61047BB /* Ndef.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ndef.swift; path = NdefLibrary/Classes/Ndef.swift; sourceTree = "<group>"; };
+		C4FB103133F04D3FF576B43D085E7E9B /* Pods-TappyBLEUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TappyBLEUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C5211D20387AE6E653AE747E20B41E0E /* StreamTagCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamTagCommand.swift; path = "TCMP/BasicNFC-CommandFamily/commands/StreamTagCommand.swift"; sourceTree = "<group>"; };
+		C7E4991750B569C099C7DBCDCD99F117 /* ReadNdefWithPasswordBytesCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReadNdefWithPasswordBytesCommand.swift; path = TCMP/Ntag21xCommandFamily/Commands/ReadNdefWithPasswordBytesCommand.swift; sourceTree = "<group>"; };
+		C919437BB72C3738A6A08D383D67F7CB /* SystemApplicationErrorResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SystemApplicationErrorResponse.swift; path = TCMP/SystemCommandFamily/Responses/SystemApplicationErrorResponse.swift; sourceTree = "<group>"; };
+		CAA1E5F42CEAFECD507E99AC35F315E0 /* PollingModes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PollingModes.swift; path = "TCMP/BasicNFC-CommandFamily/commands/PollingModes.swift"; sourceTree = "<group>"; };
+		CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		CC0A679B05C51381313C047B4BDC2786 /* TextRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextRecord.swift; path = NdefLibrary/Classes/TextRecord.swift; sourceTree = "<group>"; };
+		CC0E74D8EE1F587AC85BD4BC8B3295DE /* WriteCustomNDEFCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WriteCustomNDEFCommand.swift; path = "TCMP/BasicNFC-CommandFamily/commands/WriteCustomNDEFCommand.swift"; sourceTree = "<group>"; };
+		CC7EC0A2E5DD6932276259F0909F4A6A /* NdefLibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NdefLibrary-dummy.m"; sourceTree = "<group>"; };
+		CD1611450A9172E3493830C6B38DE094 /* Pods-TappyBLE-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TappyBLE-umbrella.h"; sourceTree = "<group>"; };
+		D07B44B4D7D3C2EED1CEAA6BD156C475 /* GenericRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericRecord.swift; path = NdefLibrary/Classes/GenericRecord.swift; sourceTree = "<group>"; };
+		D14618FF4330D332ED7268B470133270 /* EmulateURIRecordCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmulateURIRecordCommand.swift; path = "TCMP/BasicNFC-CommandFamily/commands/EmulateURIRecordCommand.swift"; sourceTree = "<group>"; };
+		D283C4D16EB25578AB00E1103F2FF887 /* Pods-TappyBLETests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TappyBLETests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast_Swift.framework; path = "Toast-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA5E61CA2FFDA8AD9642FEF18CDDA8F1 /* TappyStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TappyStatus.swift; path = TappyReader/TappyStatus.swift; sourceTree = "<group>"; };
+		DBDEAEEF62604420737447E9331B0C59 /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Toast/Toast.swift; sourceTree = "<group>"; };
+		DC8BA35805BC8C6112F7EE0DE2930847 /* TransceiveAPDUCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransceiveAPDUCommand.swift; path = TCMP/Type4CommandFamily/Commands/TransceiveAPDUCommand.swift; sourceTree = "<group>"; };
+		DCCFBDC355CC33A98D54D46CDAF09E79 /* Toast-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-prefix.pch"; sourceTree = "<group>"; };
+		DDBD2DD5C0F31E36C66A3BA2727F4E7D /* DetectType4BTagCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DetectType4BTagCommand.swift; path = TCMP/Type4CommandFamily/Commands/DetectType4BTagCommand.swift; sourceTree = "<group>"; };
+		DFCD9C333E20A9ED04A34CBCA0BC0CC1 /* Pods-TappyBLE-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TappyBLE-dummy.m"; sourceTree = "<group>"; };
+		E045C45B0F5F5A9FD6B0A5E7BAE0246A /* RawTCMPMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RawTCMPMessage.swift; path = TCMP/RawTCMPMessage.swift; sourceTree = "<group>"; };
+		E28CF9489E36D1384C0282AABBE99CB1 /* Type4CommandResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Type4CommandResolver.swift; path = TCMP/Type4CommandFamily/Type4CommandResolver.swift; sourceTree = "<group>"; };
+		E2A8D1730E023CFB372A30DC74B0BA7A /* SystemCommandFamilyConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SystemCommandFamilyConstants.swift; path = TCMP/SystemCommandFamily/SystemCommandFamilyConstants.swift; sourceTree = "<group>"; };
+		E4682198BAA683EA380623D896DCC897 /* TagWrittenResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagWrittenResponse.swift; path = "TCMP/BasicNFC-CommandFamily/responses/TagWrittenResponse.swift"; sourceTree = "<group>"; };
+		E49CAD98BDE58EBDAF5CC9BECB82913B /* Pods-TappyBLE.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TappyBLE.modulemap"; sourceTree = "<group>"; };
+		E7081CB4AE330A6032965C36408F19A3 /* Pods-TappyBLE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TappyBLE.debug.xcconfig"; sourceTree = "<group>"; };
+		E77D53462FD1DE8CC9B2D5435EF4280F /* StreamNDEFCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamNDEFCommand.swift; path = "TCMP/BasicNFC-CommandFamily/commands/StreamNDEFCommand.swift"; sourceTree = "<group>"; };
+		E8E846B41C344022E3C419190B82086F /* Toast-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Toast-Swift.modulemap"; sourceTree = "<group>"; };
+		E92864DC435CEF4409803F687FB82537 /* TCMPUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCMPUtils.swift; path = TCMP/TCMPUtils.swift; sourceTree = "<group>"; };
+		E9536638D24AC3AA2125AC3A148C0FBB /* TCMPTappy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TCMPTappy.framework; path = TCMPTappy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EB2E74DD0160FD26E37692EBC804823B /* Tappy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tappy.swift; path = TappyReader/Tappy.swift; sourceTree = "<group>"; };
+		EF08F49A30FE518F4249E2C62588059A /* Pods-TappyBLETests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TappyBLETests.release.xcconfig"; sourceTree = "<group>"; };
+		F023E694CB779CBE45805AAF42326C78 /* Pods-TappyBLETests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TappyBLETests-dummy.m"; sourceTree = "<group>"; };
+		F025F0CA30FD9E56D57501C95D5904B1 /* TCMP-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TCMP-Bridging-Header.h"; path = "TCMP/TCMP-Bridging-Header.h"; sourceTree = "<group>"; };
+		F0CC3C132BC92DD02189155B25DEDE41 /* Toast-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Toast-Swift-Info.plist"; sourceTree = "<group>"; };
+		F3D42474FC58369B4EB4C223B82E97D1 /* NdefLibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NdefLibrary.modulemap; sourceTree = "<group>"; };
+		F807B2FA7D25ED26C9B2B26DFADD79F3 /* AutoPollingCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoPollingCommand.swift; path = "TCMP/BasicNFC-CommandFamily/commands/AutoPollingCommand.swift"; sourceTree = "<group>"; };
+		F80B37A952549AD5884EDB5AD161B239 /* LockingModes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LockingModes.swift; path = "TCMP/BasicNFC-CommandFamily/commands/LockingModes.swift"; sourceTree = "<group>"; };
+		FA4519AA2251199A22A6BB05FF94297B /* SetConfigurationResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SetConfigurationResponse.swift; path = TCMP/SystemCommandFamily/Responses/SetConfigurationResponse.swift; sourceTree = "<group>"; };
+		FCC67588FA617D5978ED4E5F4E893A9C /* Type4ApplicationErrorResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Type4ApplicationErrorResponse.swift; path = TCMP/Type4CommandFamily/Responses/Type4ApplicationErrorResponse.swift; sourceTree = "<group>"; };
+		FD1A1133FCB7D62BF5D2C51EC46BB40C /* Pods-TappyBLEUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TappyBLEUITests-umbrella.h"; sourceTree = "<group>"; };
+		FD93C96CE0477DE9CD776C7781A61EE0 /* SystemErrorResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SystemErrorResponse.swift; path = TCMP/SystemCommandFamily/Responses/SystemErrorResponse.swift; sourceTree = "<group>"; };
+		FFAEC116C5E7501367B8B99D4325EC8C /* GetBatteryLevelResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GetBatteryLevelResponse.swift; path = TCMP/SystemCommandFamily/Responses/GetBatteryLevelResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1126F28B6C0D3865B76110B0D146AD8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A167365ED2BAD805ECC3A0B53249CE5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B81BF9A7290463222D64BFD1665EFEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554439B71D35E8A11D245A529860870A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42750065D44187F7508156F1DE072FAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D24CEF4C9828DD6A1BDE132727071144 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5447DDACEE986233B911A9A5756F7928 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43918EBEE239764ACA3184C4A89F8ADE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9C03C943F85DE8E3671E1DE5402111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE970D6A3F891F9830F6EB6A031FBF97 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6102CF7EA55F5A7D669F88BF0D1A701F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95ACABC71585D657249CC92BA7731A8F /* Foundation.framework in Frameworks */,
+				C06D290B9216533843023A0BF93F5927 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080EF17DD7C894F0279BF9C85F6E8DD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50BE8E8933D4D9990D0DEF7311CA7FD9 /* NdefLibrary.framework */,
+				2902C5BF532DEE7EE865BF5E1C91EE3D /* Pods_TappyBLE.framework */,
+				67C120B391FE10EFAD2676DD277661F9 /* Pods_TappyBLETests.framework */,
+				BFE086CFD373A67B751AD2ACA10609C2 /* Pods_TappyBLEUITests.framework */,
+				E9536638D24AC3AA2125AC3A148C0FBB /* TCMPTappy.framework */,
+				D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast_Swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C850C37433B9EAF70AA8EF4EC21FC43 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		352E62A5A0536C3B971870C987265BBE /* Pods-TappyBLEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				19F23BD54A0CD9ACBC98401598475B7F /* Pods-TappyBLEUITests.modulemap */,
+				9D2B7AA82AFCBB3DDF278ACD9B5970E3 /* Pods-TappyBLEUITests-acknowledgements.markdown */,
+				C4FB103133F04D3FF576B43D085E7E9B /* Pods-TappyBLEUITests-acknowledgements.plist */,
+				B1FC84FFA20835A52708BE322C563182 /* Pods-TappyBLEUITests-dummy.m */,
+				6EE3F496C2A733DBE525B5FE5BA4C457 /* Pods-TappyBLEUITests-Info.plist */,
+				FD1A1133FCB7D62BF5D2C51EC46BB40C /* Pods-TappyBLEUITests-umbrella.h */,
+				54CCCE2EA1284903B4C853A04055F9A1 /* Pods-TappyBLEUITests.debug.xcconfig */,
+				064E217B5464362731A374732BD2CA32 /* Pods-TappyBLEUITests.release.xcconfig */,
+			);
+			name = "Pods-TappyBLEUITests";
+			path = "Target Support Files/Pods-TappyBLEUITests";
+			sourceTree = "<group>";
+		};
+		4CE8FA70538A1C90EB6AF777C9AB3E5D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				14B3BD0D226F8535359F2EB65C2AC3A1 /* TCMPTappy.modulemap */,
+				4DB43FD0EF92E0FFEFF92D6615BDFD4B /* TCMPTappy.xcconfig */,
+				6C3F339AA1DB4AF100BF919C1245D439 /* TCMPTappy-dummy.m */,
+				7B5643D98B38669AAB3228775D381EF8 /* TCMPTappy-Info.plist */,
+				6E1029783FC3CF5866D65D390BC44D6A /* TCMPTappy-prefix.pch */,
+				5C6DCECC09150D8CE858FFCCE9580844 /* TCMPTappy-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TCMPTappy";
+			sourceTree = "<group>";
+		};
+		544A28557200DCA1F99AA27DC5495E39 /* TCMPTappy */ = {
+			isa = PBXGroup;
+			children = (
+				A524ED37563D8C45EA9F9C2695F0B41D /* ApplicationErrorMessage.swift */,
+				F807B2FA7D25ED26C9B2B26DFADD79F3 /* AutoPollingCommand.swift */,
+				B475336E113043AC657C79250EE91533 /* AutoPollingFeliCaTagResponse.swift */,
+				BD62DAF68ABD0B9FB7CF062324A3929E /* AutoPollingType1TagResponse.swift */,
+				A5BB86B4623A5B7A508C3D0F47F63CE8 /* AutoPollingType2TagResponse.swift */,
+				74705707C01D16BC0EA5807C2DD8452D /* AutoPollingType4ATagResponse.swift */,
+				859BA355E7C16F1334EB93565B2E051D /* AutoPollingTypeISO14443BTagResponse.swift */,
+				B8478DBA05B7F45079EC218B470254E4 /* BasicNfcApplicationErrorMessage.swift */,
+				AB05DAAA69645638616EF4A71B081593 /* BasicNFCCommandFamilyConstants.swift */,
+				291F90041F9FA7482E2AE0EA748E5172 /* BasicNFCCommandResolver.swift */,
+				BCFD99EF42F31F39CA711607B30A3AC7 /* CommandFamilyConstants.swift */,
+				5B36B4C456EF1385955A96E084A6272E /* DetectType4ATagCommand.swift */,
+				DDBD2DD5C0F31E36C66A3BA2727F4E7D /* DetectType4BTagCommand.swift */,
+				246426520B36625BE0AB853C354277CF /* DetectType4BTagWithAFICommand.swift */,
+				6415B6E7F1DAC8A89B8FDC5CD9480CA7 /* DetectType4TimeoutResponse.swift */,
+				285AC1EDC194DB2F63C45E2A30DD09F9 /* EmulateCustomNDEFRecordCommand.swift */,
+				AB37AE9413AB236453F517726EC3832F /* EmulateTextRecordCommand.swift */,
+				D14618FF4330D332ED7268B470133270 /* EmulateURIRecordCommand.swift */,
+				ABF5EE16963B8682D9BECB46C0C78AB5 /* EmulationStoppedResponse.swift */,
+				6247CED40CC2176554E8ED11EC867EDF /* EmulationSuccessResponse.swift */,
+				012E6175E621A05E3B788D78EDDAF2CE /* FeliCaTagEntryResponse.swift */,
+				15181AB94C6C1B8016592A9F3270C186 /* FeliCaTagExitResponse.swift */,
+				B065707342666C2E1FD030D1BBA7229A /* GetBatteryLevelCommand.swift */,
+				FFAEC116C5E7501367B8B99D4325EC8C /* GetBatteryLevelResponse.swift */,
+				4A8C21296DCB1782813BE09C49464436 /* GetFirmwareVersionCommand.swift */,
+				1CBE64CFB4A6F6FD01D4BC3966E70147 /* GetFirmwareVersionResponse.swift */,
+				631C20E8AE6ACCA0C0675E752285706A /* GetHardwareVersionCommand.swift */,
+				943F475906ADFBD1F89CFB7658960CDE /* GetHardwareVersionReponse.swift */,
+				00F327408D2F58A1F17D18207F3E8DC3 /* GetNtag21xCommandFamilyVersionCommand.swift */,
+				5ED78A1C00358D9BAF8A474AB0FBD969 /* GetNtag21xCommandFamilyVersionResponse.swift */,
+				AE9204414E4D2560B2EE8671C20515FF /* GetType4CommandFamilyVersionCommand.swift */,
+				0C98111B8839711BB2B6CEA6C2BF1110 /* GetType4CommandFamilyVersionResponse.swift */,
+				F80B37A952549AD5884EDB5AD161B239 /* LockingModes.swift */,
+				8B3D0A7E7CEA310482536D0D08327BD8 /* MessageResolver.swift */,
+				07D3441540013603C9E96A9A82A453C1 /* NDEFFoundResponse.swift */,
+				B5D2B20670EC476703956B8E2FF9DC07 /* Ntag21xApplicationErrorResponse.swift */,
+				AC33EFC45198C5504DD86E6B90C413B4 /* Ntag21xCommandFamilyConstants.swift */,
+				98BC51830DA5F3B12A9AE72E603EDC60 /* Ntag21xCommandResolver.swift */,
+				56B92E46FB2517B2114DBD9814B4B32B /* Ntag21xPollingTimeoutResponse.swift */,
+				24A9C0D9E4F8A3A84EAF3BA240DEF8B8 /* Ntag21xReadSuccessResponse.swift */,
+				C335A2B630D397BF46750F2E4E12D248 /* Ntag21xWriteSuccessResponse.swift */,
+				5315B1D44C52F86B97923D0E5F38184B /* OutputTestFramesCommand.swift */,
+				4F8BD6812142A8E94CA1D9142ED52018 /* OutputTestFramesResponse.swift */,
+				B7FD9D1E67A484686F21F46366AF558E /* PingCommand.swift */,
+				80B4E730C85FE906E911D4C02141D071 /* PingResponse.swift */,
+				CAA1E5F42CEAFECD507E99AC35F315E0 /* PollingModes.swift */,
+				E045C45B0F5F5A9FD6B0A5E7BAE0246A /* RawTCMPMessage.swift */,
+				C7E4991750B569C099C7DBCDCD99F117 /* ReadNdefWithPasswordBytesCommand.swift */,
+				BAC4CF4A2635EADB53467EDA02412B39 /* ReadNdefWithPasswordCommand.swift */,
+				ADDB0DD0BD83079C83A427F0F3DF9014 /* ScanNDEFCommand.swift */,
+				2792BE77990E90D2DF59D1FF79D5B051 /* ScanTagCommand.swift */,
+				6C51D00CABC86187FA9CC437B26DA0DE /* SerialTappy.swift */,
+				7357E4063EE9612ED3BBCEEC1A63F409 /* SetConfigurationCommand.swift */,
+				FA4519AA2251199A22A6BB05FF94297B /* SetConfigurationResponse.swift */,
+				1D5ACA8C9F6AE299B529831AA02170FE /* StopCommand.swift */,
+				E77D53462FD1DE8CC9B2D5435EF4280F /* StreamNDEFCommand.swift */,
+				C5211D20387AE6E653AE747E20B41E0E /* StreamTagCommand.swift */,
+				C919437BB72C3738A6A08D383D67F7CB /* SystemApplicationErrorResponse.swift */,
+				E2A8D1730E023CFB372A30DC74B0BA7A /* SystemCommandFamilyConstants.swift */,
+				0E43981D54C2B927E09B6109F5AA0A58 /* SystemCommandResolver.swift */,
+				FD93C96CE0477DE9CD776C7781A61EE0 /* SystemErrorResponse.swift */,
+				5E86E7483EE2D104B3F7C2B7DC9297A0 /* TagFoundResponse.swift */,
+				4F7F73732667224234B9501819CE5FCF /* TagTypes.swift */,
+				E4682198BAA683EA380623D896DCC897 /* TagWrittenResponse.swift */,
+				EB2E74DD0160FD26E37692EBC804823B /* Tappy.swift */,
+				AEA475B9E660152F79C4E3AC5AFD6D53 /* TappyBle.swift */,
+				1A68CE4905F7D7E3457EA20C171BEBA8 /* TappyBleCommunicator.swift */,
+				2E5420EC4E9BA9842E746A55CDAD35C7 /* TappyBleDevice.swift */,
+				2A9CA9E8E6286579B65CBF259EBBC409 /* TappyBleDeviceDefinition.swift */,
+				75366F532440124AD9E566BBD05DF0B8 /* TappyBleError.swift */,
+				86D93A51F06FB1F1E69B6CEF9BB07EB9 /* TappyBleScanner.swift */,
+				66D86136D82DB48E20A19C651287B51C /* TappyBleScannerStatus.swift */,
+				56786786DA78A00219F171ABC9AB8305 /* TappyCentralManagerProvider.swift */,
+				7CB0FEC5881AD77EAD65A39D77E22109 /* TappySerialCommunicator.swift */,
+				DA5E61CA2FFDA8AD9642FEF18CDDA8F1 /* TappyStatus.swift */,
+				A05870533F0DEC75644F8EF019E4C53B /* TCMP.h */,
+				04D5941BA7B07BB37FA98A40ADC33033 /* TCMP.m */,
+				F025F0CA30FD9E56D57501C95D5904B1 /* TCMP-Bridging-Header.h */,
+				8AC75C2483FE4EC3720006CCDB16E14D /* TCMPMessage.swift */,
+				E92864DC435CEF4409803F687FB82537 /* TCMPUtils.swift */,
+				DC8BA35805BC8C6112F7EE0DE2930847 /* TransceiveAPDUCommand.swift */,
+				4622AC1BF074D9BC3CC1CAAF5FE28832 /* TransceiveAPDUSuccessResponse.swift */,
+				2AF9418CEEDE90EC5760E1BCB9F4CBF1 /* Type1TagEntryResponse.swift */,
+				6AAF839DA49364C53779344D13DE07B9 /* Type1TagExitResponse.swift */,
+				12CCA6D6A1E3F00E79DCF872F4A7E503 /* Type2TagEntryResponse.swift */,
+				382ABBC1674630BA9FBC4104A899F049 /* Type2TagExitResponse.swift */,
+				FCC67588FA617D5978ED4E5F4E893A9C /* Type4ApplicationErrorResponse.swift */,
+				9098DB5CB1CBBE2ED56A9CB4BC7A5BB7 /* Type4ATagDetectedResponse.swift */,
+				2AF071062DC01AE710CA8A9A02603E45 /* Type4ATagEntryResponse.swift */,
+				54900AF55C913D610F31FA7CFEF886E3 /* Type4ATagExitResponse.swift */,
+				A0A21F3F18C757F669DC056D4E2B4895 /* Type4BTagDetectedResponse.swift */,
+				83BF177432B4CF3FD7E3C58A9E7B4089 /* Type4CommandFamilyConstants.swift */,
+				E28CF9489E36D1384C0282AABBE99CB1 /* Type4CommandResolver.swift */,
+				ADD66DADDE9BA01CFFCDEDC087786D6B /* Type4PollingErrorDetectedResponse.swift */,
+				29BE3BBF4ED8988C26DC731E59119EB0 /* TypeISO14443BTagEntryResponse.swift */,
+				9E4B4701089D757801F77B0C5149B490 /* TypeISO14443BTagExitResponse.swift */,
+				479AF5AD861E3051663DDF8D6FDA136B /* UnrecognizedTagEntryResponse.swift */,
+				A3802094995CC673D2A2027EF552A8B0 /* UnrecognizedTagExitResponse.swift */,
+				B57025B05F04AB8E21F9B092B4DDF0E7 /* Util.swift */,
+				CC0E74D8EE1F587AC85BD4BC8B3295DE /* WriteCustomNDEFCommand.swift */,
+				1D1BC0FD059F9BE19581D3D7C9E01D16 /* WriteCustomNdefWithPasswordBytesCommand.swift */,
+				B867404D4A36E0D7349E7D4E1D669ED0 /* WriteCustomNdefWithPasswordCommand.swift */,
+				95F3DA9C616CB97B37A1D540BCDD619F /* WriteNDEFTextCommand.swift */,
+				9E6A138B001774C2A2EC497576CA6282 /* WriteNDEFUriCommand.swift */,
+				B91C85F32C663C9E4A1FF6D1A69B664E /* WriteNtag21xWithPasswordBytesCommand.swift */,
+				780B3784FC774DC80EAED2EA9A12722A /* WriteNtag21xWithPasswordCommand.swift */,
+				ABA8FF094903752199CF2C5E7A8F69BC /* WriteTextNdefWithPasswordBytesCommand.swift */,
+				29EC63BFBB168AAD4DA9FDF59893CA93 /* WriteTextNdefWithPasswordCommand.swift */,
+				BE8F032825C868F275FA35FC057B762A /* WriteUriNdefWithPasswordBytesCommand.swift */,
+				A613CE89FCC1F636D3E29CE122545B0F /* WriteUriNdefWithPasswordCommand.swift */,
+				4CE8FA70538A1C90EB6AF777C9AB3E5D /* Support Files */,
+			);
+			name = TCMPTappy;
+			path = TCMPTappy;
+			sourceTree = "<group>";
+		};
+		56774C6A3F5F0AE9875EE3F9FD665A30 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A080DE39697C3F9CDFFCFBBAB9D03E99 /* Pods-TappyBLE */,
+				E0C2216C9E5CE2551E6F9DC895409DE2 /* Pods-TappyBLETests */,
+				352E62A5A0536C3B971870C987265BBE /* Pods-TappyBLEUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6A1B8E323C6F5BD7875020A524C158A4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8E846B41C344022E3C419190B82086F /* Toast-Swift.modulemap */,
+				1A5FC9CFDE611677E1204A622CD0D14B /* Toast-Swift.xcconfig */,
+				721F8AEDD39CEB51A576474754A40252 /* Toast-Swift-dummy.m */,
+				F0CC3C132BC92DD02189155B25DEDE41 /* Toast-Swift-Info.plist */,
+				DCCFBDC355CC33A98D54D46CDAF09E79 /* Toast-Swift-prefix.pch */,
+				08CBA4DE827ADF8AB0BD77C99E71F967 /* Toast-Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Toast-Swift";
+			sourceTree = "<group>";
+		};
+		6C850C37433B9EAF70AA8EF4EC21FC43 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */,
+				CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A080DE39697C3F9CDFFCFBBAB9D03E99 /* Pods-TappyBLE */ = {
+			isa = PBXGroup;
+			children = (
+				E49CAD98BDE58EBDAF5CC9BECB82913B /* Pods-TappyBLE.modulemap */,
+				B4CB43AAD5D457B96FE64ED79C74A8C8 /* Pods-TappyBLE-acknowledgements.markdown */,
+				2C7A2044B53D148D503DCE011FE3AA36 /* Pods-TappyBLE-acknowledgements.plist */,
+				DFCD9C333E20A9ED04A34CBCA0BC0CC1 /* Pods-TappyBLE-dummy.m */,
+				3FB63612FFC2DD87F76299B7F401BA62 /* Pods-TappyBLE-frameworks.sh */,
+				575841B0108A5101D13CB501A778191B /* Pods-TappyBLE-Info.plist */,
+				CD1611450A9172E3493830C6B38DE094 /* Pods-TappyBLE-umbrella.h */,
+				E7081CB4AE330A6032965C36408F19A3 /* Pods-TappyBLE.debug.xcconfig */,
+				4F282BDE2AD23B83B91241C06F109392 /* Pods-TappyBLE.release.xcconfig */,
+			);
+			name = "Pods-TappyBLE";
+			path = "Target Support Files/Pods-TappyBLE";
+			sourceTree = "<group>";
+		};
+		B81E3A1F4A8CC5CDF49D26E340DB421D /* NdefLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				D07B44B4D7D3C2EED1CEAA6BD156C475 /* GenericRecord.swift */,
+				C3AD4974A4210CF70C8C67D4A61047BB /* Ndef.swift */,
+				356F3A0FF5E2D0E62CF7504E574AB08E /* NdefMessage.swift */,
+				51B67264BA4B4E2F7B14A2AB97B614D9 /* NdefRecord.swift */,
+				CC0A679B05C51381313C047B4BDC2786 /* TextRecord.swift */,
+				2AF91A87F0DFB6B95F3A1090A90CBF6C /* UriRecord.swift */,
+				C369E8D59D96BFFF75ACA33F6E885738 /* Support Files */,
+			);
+			name = NdefLibrary;
+			path = NdefLibrary;
+			sourceTree = "<group>";
+		};
+		C369E8D59D96BFFF75ACA33F6E885738 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3D42474FC58369B4EB4C223B82E97D1 /* NdefLibrary.modulemap */,
+				A116C629A8A81C130D0F0F8C7B1E8D32 /* NdefLibrary.xcconfig */,
+				CC7EC0A2E5DD6932276259F0909F4A6A /* NdefLibrary-dummy.m */,
+				04154DE28B40F9F6D2AE5195B91AB79D /* NdefLibrary-Info.plist */,
+				31C8A59AB0A24752EBB61A8D533BB8F1 /* NdefLibrary-prefix.pch */,
+				28C4978A5E9FFE9E1CA1E61004FA2718 /* NdefLibrary-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NdefLibrary";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				E51F520CB5ACF1D46EDF24FA06B83BC2 /* Pods */,
+				080EF17DD7C894F0279BF9C85F6E8DD8 /* Products */,
+				56774C6A3F5F0AE9875EE3F9FD665A30 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E0C2216C9E5CE2551E6F9DC895409DE2 /* Pods-TappyBLETests */ = {
+			isa = PBXGroup;
+			children = (
+				237DA0FD82AAE6A6B8924094FA890352 /* Pods-TappyBLETests.modulemap */,
+				D283C4D16EB25578AB00E1103F2FF887 /* Pods-TappyBLETests-acknowledgements.markdown */,
+				93DF6FE2D1343A494702B52C531447C1 /* Pods-TappyBLETests-acknowledgements.plist */,
+				F023E694CB779CBE45805AAF42326C78 /* Pods-TappyBLETests-dummy.m */,
+				8ECC493794700289AED9727B798E7FDF /* Pods-TappyBLETests-Info.plist */,
+				9C66DB3B5B4733745EAE28CEA115A84A /* Pods-TappyBLETests-umbrella.h */,
+				05354D71777B9778156E93451D37077E /* Pods-TappyBLETests.debug.xcconfig */,
+				EF08F49A30FE518F4249E2C62588059A /* Pods-TappyBLETests.release.xcconfig */,
+			);
+			name = "Pods-TappyBLETests";
+			path = "Target Support Files/Pods-TappyBLETests";
+			sourceTree = "<group>";
+		};
+		E509DBBF86F9F8F9F64F8EA9C4E08E7B /* Toast-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				DBDEAEEF62604420737447E9331B0C59 /* Toast.swift */,
+				6A1B8E323C6F5BD7875020A524C158A4 /* Support Files */,
+			);
+			name = "Toast-Swift";
+			path = "Toast-Swift";
+			sourceTree = "<group>";
+		};
+		E51F520CB5ACF1D46EDF24FA06B83BC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B81E3A1F4A8CC5CDF49D26E340DB421D /* NdefLibrary */,
+				544A28557200DCA1F99AA27DC5495E39 /* TCMPTappy */,
+				E509DBBF86F9F8F9F64F8EA9C4E08E7B /* Toast-Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		541A0721D8D26374CF7CF04B1473A45A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2024EE5E265681137A9FEBC630E6E0F1 /* Toast-Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E066389AE60C45E10471BA886A61B56 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53616AF5C3A7A17B00A63E9239D3B256 /* TCMP-Bridging-Header.h in Headers */,
+				CC6A27F43485CFBB9E07010FE9E126C8 /* TCMP.h in Headers */,
+				5409E6530553BCA3F3D26F9485DF2980 /* TCMPTappy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6569C9E66A30ADF8882902A16842C43D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3EACFEA91E1C9DB982DC256B51423F6 /* Pods-TappyBLE-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93727202FAB7E9134554A283E7D27F26 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5037666225E438C3DBB9300A6AC5645 /* Pods-TappyBLEUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE47734C70606F978D9CB69A651BA5F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4BF77B11BA6E61900EBE8C1A5E343F /* Pods-TappyBLETests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADC01EB18E06F0DD64D7547BD6F1AD56 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C725F80F41E3C9E4B34AD84B00FF0B07 /* NdefLibrary-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		34024AB0179833EDA913C84148F360C7 /* TCMPTappy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC8E60C9C339AF901D0166E3D8AC3E08 /* Build configuration list for PBXNativeTarget "TCMPTappy" */;
+			buildPhases = (
+				5E066389AE60C45E10471BA886A61B56 /* Headers */,
+				3EA7585301FD72E7FB04683329B1208D /* Sources */,
+				3B81BF9A7290463222D64BFD1665EFEF /* Frameworks */,
+				B4F280F092F24C86755067D242220A4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TCMPTappy;
+			productName = TCMPTappy;
+			productReference = E9536638D24AC3AA2125AC3A148C0FBB /* TCMPTappy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4A37C8DA2748182C0AD1C25052CED434 /* Pods-TappyBLEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A268D8F48D83A059F7CAF510B423CB5B /* Build configuration list for PBXNativeTarget "Pods-TappyBLEUITests" */;
+			buildPhases = (
+				93727202FAB7E9134554A283E7D27F26 /* Headers */,
+				AB0EBCF7A7C724C312C76CA77DB42696 /* Sources */,
+				1126F28B6C0D3865B76110B0D146AD8D /* Frameworks */,
+				B5508EFC37364597CA46815FCCB0350B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6B7DC743637191C2FCDD37182DE38A2 /* PBXTargetDependency */,
+			);
+			name = "Pods-TappyBLEUITests";
+			productName = "Pods-TappyBLEUITests";
+			productReference = BFE086CFD373A67B751AD2ACA10609C2 /* Pods_TappyBLEUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		60368623167DC4036089D839583DFF43 /* Pods-TappyBLETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 821BEC10EB0BC1B7F53FC4EB163E350C /* Build configuration list for PBXNativeTarget "Pods-TappyBLETests" */;
+			buildPhases = (
+				ACE47734C70606F978D9CB69A651BA5F /* Headers */,
+				8A80B3F9C60C33D7569F91B9FE837648 /* Sources */,
+				42750065D44187F7508156F1DE072FAD /* Frameworks */,
+				7D3AD86C5C0CC7B7B75412FFB3EA73ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4913976276FE37439313679949752332 /* PBXTargetDependency */,
+			);
+			name = "Pods-TappyBLETests";
+			productName = "Pods-TappyBLETests";
+			productReference = 67C120B391FE10EFAD2676DD277661F9 /* Pods_TappyBLETests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		729F0D970752503B88977878A2B04869 /* NdefLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A437B293B019918E87D8EF44D7E80DDD /* Build configuration list for PBXNativeTarget "NdefLibrary" */;
+			buildPhases = (
+				ADC01EB18E06F0DD64D7547BD6F1AD56 /* Headers */,
+				B4EF5B3AF514BBB0F0DB34F5D8F2EEA5 /* Sources */,
+				5447DDACEE986233B911A9A5756F7928 /* Frameworks */,
+				693AE4FEE935F4A3F0C151B434B295C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NdefLibrary;
+			productName = NdefLibrary;
+			productReference = 50BE8E8933D4D9990D0DEF7311CA7FD9 /* NdefLibrary.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B4269F07106FB9BA2B502F46C46D3DD /* Pods-TappyBLE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC5CFFE6F4EF64A860117F9B703967F1 /* Build configuration list for PBXNativeTarget "Pods-TappyBLE" */;
+			buildPhases = (
+				6569C9E66A30ADF8882902A16842C43D /* Headers */,
+				BEC6199051C149416C19E64C8ADC39A5 /* Sources */,
+				5F9C03C943F85DE8E3671E1DE5402111 /* Frameworks */,
+				FD42B747FC546E008132F0120115C495 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D2758D9998F5784FABDAFCB202CF475 /* PBXTargetDependency */,
+				F4B089999D3EF707422643B6BD4EE322 /* PBXTargetDependency */,
+				DB9CE4CC453AF2FDD260502D2C8B611F /* PBXTargetDependency */,
+			);
+			name = "Pods-TappyBLE";
+			productName = "Pods-TappyBLE";
+			productReference = 2902C5BF532DEE7EE865BF5E1C91EE3D /* Pods_TappyBLE.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8C401847A53B4C2810311A8CBD715AD /* Build configuration list for PBXNativeTarget "Toast-Swift" */;
+			buildPhases = (
+				541A0721D8D26374CF7CF04B1473A45A /* Headers */,
+				32133C6B0EACD421CB9EB1ABFCE89B97 /* Sources */,
+				6102CF7EA55F5A7D669F88BF0D1A701F /* Frameworks */,
+				8812DCC289D1E7BE07818E350A3B8656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Toast-Swift";
+			productName = "Toast-Swift";
+			productReference = D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 080EF17DD7C894F0279BF9C85F6E8DD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				729F0D970752503B88977878A2B04869 /* NdefLibrary */,
+				9B4269F07106FB9BA2B502F46C46D3DD /* Pods-TappyBLE */,
+				60368623167DC4036089D839583DFF43 /* Pods-TappyBLETests */,
+				4A37C8DA2748182C0AD1C25052CED434 /* Pods-TappyBLEUITests */,
+				34024AB0179833EDA913C84148F360C7 /* TCMPTappy */,
+				B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		693AE4FEE935F4A3F0C151B434B295C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D3AD86C5C0CC7B7B75412FFB3EA73ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8812DCC289D1E7BE07818E350A3B8656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4F280F092F24C86755067D242220A4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5508EFC37364597CA46815FCCB0350B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD42B747FC546E008132F0120115C495 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32133C6B0EACD421CB9EB1ABFCE89B97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B326644BB08AEDF697A82A0F1A66D68 /* Toast-Swift-dummy.m in Sources */,
+				4753716AE7A1AB22FB6BA61AA74D942F /* Toast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EA7585301FD72E7FB04683329B1208D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5018D8110BC81F9746F18AC2CC4750D7 /* ApplicationErrorMessage.swift in Sources */,
+				D23E0B97B234582B952C099B6A96DE45 /* AutoPollingCommand.swift in Sources */,
+				F9AC342B0DEAD4195B9DEE5CE4111890 /* AutoPollingFeliCaTagResponse.swift in Sources */,
+				B68093DFFF2113DE53B8C56FC59C2FB6 /* AutoPollingType1TagResponse.swift in Sources */,
+				604E24CFA86F604AE9E7A197932C6808 /* AutoPollingType2TagResponse.swift in Sources */,
+				7175E6A31709FDCA3904DCBC462AC14C /* AutoPollingType4ATagResponse.swift in Sources */,
+				5CCD4817F25B8F0C8D5A0D069B236718 /* AutoPollingTypeISO14443BTagResponse.swift in Sources */,
+				541FD1622387C5D71C9C35EBF56D866E /* BasicNfcApplicationErrorMessage.swift in Sources */,
+				5C5312EC1F739254EBA5AB4DCD62E2C6 /* BasicNFCCommandFamilyConstants.swift in Sources */,
+				0D8A02F9953E6F15F57CE60646A5996C /* BasicNFCCommandResolver.swift in Sources */,
+				26A3E8CCF8046793BD7D471D8AD2BCC8 /* CommandFamilyConstants.swift in Sources */,
+				BEE832A0250A1E5BCB95D739956DB2E2 /* DetectType4ATagCommand.swift in Sources */,
+				05DE222F0F62F4C90C12E9F9FC0761B0 /* DetectType4BTagCommand.swift in Sources */,
+				B81F3F3FCEF421E1AFF346E1851A409F /* DetectType4BTagWithAFICommand.swift in Sources */,
+				76F125EBE0683A9F5FEFF011412C3C48 /* DetectType4TimeoutResponse.swift in Sources */,
+				A67F291C16D32D3A454E162D90E8AE3E /* EmulateCustomNDEFRecordCommand.swift in Sources */,
+				0D3281495A24801BC2653D3F5AB46CD5 /* EmulateTextRecordCommand.swift in Sources */,
+				D41E71761FFB03570552C13E6456DBC4 /* EmulateURIRecordCommand.swift in Sources */,
+				336514EADBD986093A1A033254407292 /* EmulationStoppedResponse.swift in Sources */,
+				F9290B0AEB3971804E3EB05C33D05C8C /* EmulationSuccessResponse.swift in Sources */,
+				12FE6ADC12363CEE0E406A5BE1E1D8AB /* FeliCaTagEntryResponse.swift in Sources */,
+				EBB036156E02BDE77C7A1A2C642FE0DC /* FeliCaTagExitResponse.swift in Sources */,
+				F96286AAEB716CAC952927073AE3061B /* GetBatteryLevelCommand.swift in Sources */,
+				21BE8D1A1038129B20AF3DFBA22305C1 /* GetBatteryLevelResponse.swift in Sources */,
+				C387F6D8870B40A1626DA4D3A2E45816 /* GetFirmwareVersionCommand.swift in Sources */,
+				1DC9F68A52EB6F4F811FECA61D56665B /* GetFirmwareVersionResponse.swift in Sources */,
+				11112052DD4CAA9225A7119A7B98584C /* GetHardwareVersionCommand.swift in Sources */,
+				A7E446DD5FEB5DC5312A598F58F459A5 /* GetHardwareVersionReponse.swift in Sources */,
+				BAD8058C9263E5CF8685948A61EA67ED /* GetNtag21xCommandFamilyVersionCommand.swift in Sources */,
+				AD05C0627E1283C764D23019E0C918E3 /* GetNtag21xCommandFamilyVersionResponse.swift in Sources */,
+				4200F44DDA25BD90517507B8367CEC4F /* GetType4CommandFamilyVersionCommand.swift in Sources */,
+				A17E5E30E48C94F9D7543F3A090518FE /* GetType4CommandFamilyVersionResponse.swift in Sources */,
+				E22436EDF2BB25ED43E2293B881E8C67 /* LockingModes.swift in Sources */,
+				1ABFAACC4B73D4368507039AF48C2D4D /* MessageResolver.swift in Sources */,
+				FB62DA18EE5D85F116F33779668EB727 /* NDEFFoundResponse.swift in Sources */,
+				374FFDFFEAEC2B1FD00099B82E153C1E /* Ntag21xApplicationErrorResponse.swift in Sources */,
+				2FFF5CF06227958464E564A3BFB98E1F /* Ntag21xCommandFamilyConstants.swift in Sources */,
+				CDCE0ECB64B1AC7DA0B4DD16B37B583D /* Ntag21xCommandResolver.swift in Sources */,
+				3751EC67E3B03DCF6E2FBEA58C31E79E /* Ntag21xPollingTimeoutResponse.swift in Sources */,
+				8D28464D6ED2DF7050A67EA7F794459E /* Ntag21xReadSuccessResponse.swift in Sources */,
+				222494EC87FDF17A4E0AAB328C9F7F84 /* Ntag21xWriteSuccessResponse.swift in Sources */,
+				BC0D45576906D95458B5C037F8C4DBED /* OutputTestFramesCommand.swift in Sources */,
+				FA5FEF2D0CAFAB25A57BDDED96463A63 /* OutputTestFramesResponse.swift in Sources */,
+				61FF1AE07A1A9C287F8D1E0098E9C820 /* PingCommand.swift in Sources */,
+				9C26373429F359A3734096F87019954C /* PingResponse.swift in Sources */,
+				AF0011EA2A40FFC83A53ADCEE7D869A2 /* PollingModes.swift in Sources */,
+				61DDA4EB37E57B34509DA2C20B344F53 /* RawTCMPMessage.swift in Sources */,
+				1C279C4F77F0C0DDFCEE0E8864428F7F /* ReadNdefWithPasswordBytesCommand.swift in Sources */,
+				9B1FE5761F5386AB04842EA3E173BB8D /* ReadNdefWithPasswordCommand.swift in Sources */,
+				96B5194AE6EC806C265EC096DB9FDBBB /* ScanNDEFCommand.swift in Sources */,
+				3D3519C04DB4FE56B1A09DAD095BB9CA /* ScanTagCommand.swift in Sources */,
+				DB00AD26E17A15C8EA3A7989453EC5B7 /* SerialTappy.swift in Sources */,
+				85FB62828EE8448AD490217FD34607E7 /* SetConfigurationCommand.swift in Sources */,
+				61C41B741571434AD5D5C22D0AE731F7 /* SetConfigurationResponse.swift in Sources */,
+				D518169BA72F56D05F0A47E0390009A4 /* StopCommand.swift in Sources */,
+				36FCAA2181E1DC86F852BBACA2FFDE3D /* StreamNDEFCommand.swift in Sources */,
+				B13F6B78F087E243FD41EC7A85A0586E /* StreamTagCommand.swift in Sources */,
+				EAFED1800174FD0ACD3175568C5935BD /* SystemApplicationErrorResponse.swift in Sources */,
+				317E771DFF18E3563D1082725B47F120 /* SystemCommandFamilyConstants.swift in Sources */,
+				D6BB15C5A252A479F957B4E167A34FF5 /* SystemCommandResolver.swift in Sources */,
+				640C28BCD2551A81E0D94A4FDA6650CE /* SystemErrorResponse.swift in Sources */,
+				11A126F27766D4D2945757592AF89350 /* TagFoundResponse.swift in Sources */,
+				78E1193491CE65248E337E9A34A55AC3 /* TagTypes.swift in Sources */,
+				40AA5BEC022C1213829A968169833EA7 /* TagWrittenResponse.swift in Sources */,
+				4AD2429C6D207F226DF701FFBD4ABBFC /* Tappy.swift in Sources */,
+				722FBBCE8A62810EB70B7FF23F9F305D /* TappyBle.swift in Sources */,
+				80158A3598F3F16AE319FF687998F7D4 /* TappyBleCommunicator.swift in Sources */,
+				7C5E5A79471E42CCC37E443F34A4B918 /* TappyBleDevice.swift in Sources */,
+				031B9DF983CD413E86E5531BE51A3DAC /* TappyBleDeviceDefinition.swift in Sources */,
+				155D068756F8D2DFD5753D45346E6DBE /* TappyBleError.swift in Sources */,
+				95E40E667C74A5E30BE9245BC9AD403C /* TappyBleScanner.swift in Sources */,
+				01101FBAA7C9EBE4629F6D9EB4D16F9A /* TappyBleScannerStatus.swift in Sources */,
+				73555DA1BED80CCDC550E4094648B3AF /* TappyCentralManagerProvider.swift in Sources */,
+				B0778307E8B5CD063C6C3C09FBCF2684 /* TappySerialCommunicator.swift in Sources */,
+				A6E488C75638A7D1B084C9C38775D88F /* TappyStatus.swift in Sources */,
+				7C7547F0D056464A9BD4366D02B2AA67 /* TCMP.m in Sources */,
+				3DCE77A331213E840C16843374185FFA /* TCMPMessage.swift in Sources */,
+				BFD9CE97ED64B177CB462D9910BC83BF /* TCMPTappy-dummy.m in Sources */,
+				57BA087B81E703F271FCE43ABFED90AD /* TCMPUtils.swift in Sources */,
+				79446B38E499DD00E786BB770E8F3123 /* TransceiveAPDUCommand.swift in Sources */,
+				98696EA0EB059C11D3B0FC6FF9A24159 /* TransceiveAPDUSuccessResponse.swift in Sources */,
+				A3FF542BB1B1B356B52EE0D4C6C03A67 /* Type1TagEntryResponse.swift in Sources */,
+				6DB5206F5DED6E7B2BCBC317E683DFD8 /* Type1TagExitResponse.swift in Sources */,
+				85F7DFBD766FA8DF9CB3B65BDF90C293 /* Type2TagEntryResponse.swift in Sources */,
+				222B9449AA8E9671B0A12D5D827DDED3 /* Type2TagExitResponse.swift in Sources */,
+				F301EDBB449427CC662DDD18C30FC12E /* Type4ApplicationErrorResponse.swift in Sources */,
+				B92435DA21CEFF0B0CCEB088497260B4 /* Type4ATagDetectedResponse.swift in Sources */,
+				83F2AF0845CEA068CC14B741250069AC /* Type4ATagEntryResponse.swift in Sources */,
+				B07D78FEBD4A70B0E0227BF7D26E4351 /* Type4ATagExitResponse.swift in Sources */,
+				FDF3B7C4464BBF03942BA93474BB6C5C /* Type4BTagDetectedResponse.swift in Sources */,
+				FEAD216D07A1C167A0434F294D64E6F0 /* Type4CommandFamilyConstants.swift in Sources */,
+				C5DF8D5A0D14B632AD1E56AC8CD7C79E /* Type4CommandResolver.swift in Sources */,
+				17413A6C50315B39961660177109FA97 /* Type4PollingErrorDetectedResponse.swift in Sources */,
+				6B380E62190BDCAB16329CF688D27199 /* TypeISO14443BTagEntryResponse.swift in Sources */,
+				33F1CECCBF210E8AC22D102D14542960 /* TypeISO14443BTagExitResponse.swift in Sources */,
+				45C362225E901C952696668700A8AC0E /* UnrecognizedTagEntryResponse.swift in Sources */,
+				7528C1CF0A805C5516F72A02FC0CAD3C /* UnrecognizedTagExitResponse.swift in Sources */,
+				A4A6BFE69A78F199CEF1155750FC83A4 /* Util.swift in Sources */,
+				86274734602F1A7A0355AB567295122A /* WriteCustomNDEFCommand.swift in Sources */,
+				9C96D71A6877CFF298AF55E17E986AF4 /* WriteCustomNdefWithPasswordBytesCommand.swift in Sources */,
+				5256DEBFF3DB44E7BAE16166846A4BDB /* WriteCustomNdefWithPasswordCommand.swift in Sources */,
+				2EB45F44758250145CDB20ED44B733BB /* WriteNDEFTextCommand.swift in Sources */,
+				11F215D3F63BF97A3BD2F9808034C8C7 /* WriteNDEFUriCommand.swift in Sources */,
+				0BEA534D35BB335193CA7A5081CC95C1 /* WriteNtag21xWithPasswordBytesCommand.swift in Sources */,
+				9866FF30BC84C91CCA6129B321DCF549 /* WriteNtag21xWithPasswordCommand.swift in Sources */,
+				6040427FF349BF3AE2BA5AB7F6800159 /* WriteTextNdefWithPasswordBytesCommand.swift in Sources */,
+				4C98D5EEBC7FA681F14787EFD30BE9DC /* WriteTextNdefWithPasswordCommand.swift in Sources */,
+				BCF74E37F46E33ADDBEAE850C0CF0F09 /* WriteUriNdefWithPasswordBytesCommand.swift in Sources */,
+				59251FDA7139974D8A0E2D0497D136A3 /* WriteUriNdefWithPasswordCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A80B3F9C60C33D7569F91B9FE837648 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D3FD492EB9F19C8C93D650D7352EB2 /* Pods-TappyBLETests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0EBCF7A7C724C312C76CA77DB42696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEE8AA1952A13C55714BEB018A598B8 /* Pods-TappyBLEUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4EF5B3AF514BBB0F0DB34F5D8F2EEA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E74EA2E31F52AF41330D0D4DE3E11D2E /* GenericRecord.swift in Sources */,
+				83557B31F9F4BE07245A39E8B955F767 /* Ndef.swift in Sources */,
+				50648EEB521DCBE5746A2CA4F657D2F7 /* NdefLibrary-dummy.m in Sources */,
+				ADC9DB3F9140C7B550C7458BA6946B63 /* NdefMessage.swift in Sources */,
+				B3040DE1A9ABB7E6F3C2DF45384CEB64 /* NdefRecord.swift in Sources */,
+				9448147DCBD790F54F3E27C1B984C7A6 /* TextRecord.swift in Sources */,
+				F2C2FF8E9831FC5C124EBB986C82C96B /* UriRecord.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC6199051C149416C19E64C8ADC39A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16728B3A8685AB912FDB79DE5E834A08 /* Pods-TappyBLE-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4913976276FE37439313679949752332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TappyBLE";
+			target = 9B4269F07106FB9BA2B502F46C46D3DD /* Pods-TappyBLE */;
+			targetProxy = A75F7E4BE71DEF873F7875F299C4635F /* PBXContainerItemProxy */;
+		};
+		5D2758D9998F5784FABDAFCB202CF475 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NdefLibrary;
+			target = 729F0D970752503B88977878A2B04869 /* NdefLibrary */;
+			targetProxy = C946DCA35FD7EE624F44FA7004A7499C /* PBXContainerItemProxy */;
+		};
+		B6B7DC743637191C2FCDD37182DE38A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TappyBLE";
+			target = 9B4269F07106FB9BA2B502F46C46D3DD /* Pods-TappyBLE */;
+			targetProxy = 959BF0304C8B49FEEA754459E473655C /* PBXContainerItemProxy */;
+		};
+		DB9CE4CC453AF2FDD260502D2C8B611F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Toast-Swift";
+			target = B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */;
+			targetProxy = 38400415382CA45081D29A31FE9AEFFF /* PBXContainerItemProxy */;
+		};
+		F4B089999D3EF707422643B6BD4EE322 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TCMPTappy;
+			target = 34024AB0179833EDA913C84148F360C7 /* TCMPTappy */;
+			targetProxy = CE9F23773603C521ED7F005EE556F398 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		131356BE54884448CA49C07BEDF4BB2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		276531CCB7D70BEAA172BA0433BE5D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A116C629A8A81C130D0F0F8C7B1E8D32 /* NdefLibrary.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NdefLibrary/NdefLibrary-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NdefLibrary/NdefLibrary-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NdefLibrary/NdefLibrary.modulemap";
+				PRODUCT_MODULE_NAME = NdefLibrary;
+				PRODUCT_NAME = NdefLibrary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		33E4D7CE9E6CE45EE71827F54A420968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A116C629A8A81C130D0F0F8C7B1E8D32 /* NdefLibrary.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NdefLibrary/NdefLibrary-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NdefLibrary/NdefLibrary-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NdefLibrary/NdefLibrary.modulemap";
+				PRODUCT_MODULE_NAME = NdefLibrary;
+				PRODUCT_NAME = NdefLibrary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		470E7D5AFABA1DA2E9A6EECE8A32E381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A5FC9CFDE611677E1204A622CD0D14B /* Toast-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Toast-Swift/Toast-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toast-Swift/Toast-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Toast-Swift/Toast-Swift.modulemap";
+				PRODUCT_MODULE_NAME = Toast_Swift;
+				PRODUCT_NAME = Toast_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6AD29D275DEF86406259AAFF77A1CF6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F282BDE2AD23B83B91241C06F109392 /* Pods-TappyBLE.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TappyBLE/Pods-TappyBLE-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TappyBLE/Pods-TappyBLE.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6B7940BEAED9F0CE732642905F7A096B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A5FC9CFDE611677E1204A622CD0D14B /* Toast-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Toast-Swift/Toast-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toast-Swift/Toast-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Toast-Swift/Toast-Swift.modulemap";
+				PRODUCT_MODULE_NAME = Toast_Swift;
+				PRODUCT_NAME = Toast_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8258E5C80E31C52973FD1D87C7728B58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DB43FD0EF92E0FFEFF92D6615BDFD4B /* TCMPTappy.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TCMPTappy/TCMPTappy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TCMPTappy/TCMPTappy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TCMPTappy/TCMPTappy.modulemap";
+				PRODUCT_MODULE_NAME = TCMPTappy;
+				PRODUCT_NAME = TCMPTappy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A7921933065B708148EBBD02535A5C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05354D71777B9778156E93451D37077E /* Pods-TappyBLETests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TappyBLETests/Pods-TappyBLETests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TappyBLETests/Pods-TappyBLETests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B5858BD7766750EE0D56D59057EDA3AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 064E217B5464362731A374732BD2CA32 /* Pods-TappyBLEUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TappyBLEUITests/Pods-TappyBLEUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TappyBLEUITests/Pods-TappyBLEUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B90F9D3DFC974C16F0B3F2CD6EDEA8EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DB43FD0EF92E0FFEFF92D6615BDFD4B /* TCMPTappy.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TCMPTappy/TCMPTappy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TCMPTappy/TCMPTappy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TCMPTappy/TCMPTappy.modulemap";
+				PRODUCT_MODULE_NAME = TCMPTappy;
+				PRODUCT_NAME = TCMPTappy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D16DBBC908DA26E34CEB6D85F3E187E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54CCCE2EA1284903B4C853A04055F9A1 /* Pods-TappyBLEUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TappyBLEUITests/Pods-TappyBLEUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TappyBLEUITests/Pods-TappyBLEUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E0700E0F7D16AD7AE2ABA2AA356AF02E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF08F49A30FE518F4249E2C62588059A /* Pods-TappyBLETests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TappyBLETests/Pods-TappyBLETests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TappyBLETests/Pods-TappyBLETests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F090CD07A80273D5A73C8EA19224ADDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FB5B2100C8B5A176F2A1BF91CD09C329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7081CB4AE330A6032965C36408F19A3 /* Pods-TappyBLE.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TappyBLE/Pods-TappyBLE-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TappyBLE/Pods-TappyBLE.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				131356BE54884448CA49C07BEDF4BB2A /* Debug */,
+				F090CD07A80273D5A73C8EA19224ADDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		821BEC10EB0BC1B7F53FC4EB163E350C /* Build configuration list for PBXNativeTarget "Pods-TappyBLETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A7921933065B708148EBBD02535A5C3 /* Debug */,
+				E0700E0F7D16AD7AE2ABA2AA356AF02E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A268D8F48D83A059F7CAF510B423CB5B /* Build configuration list for PBXNativeTarget "Pods-TappyBLEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D16DBBC908DA26E34CEB6D85F3E187E6 /* Debug */,
+				B5858BD7766750EE0D56D59057EDA3AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A437B293B019918E87D8EF44D7E80DDD /* Build configuration list for PBXNativeTarget "NdefLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33E4D7CE9E6CE45EE71827F54A420968 /* Debug */,
+				276531CCB7D70BEAA172BA0433BE5D6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC8E60C9C339AF901D0166E3D8AC3E08 /* Build configuration list for PBXNativeTarget "TCMPTappy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8258E5C80E31C52973FD1D87C7728B58 /* Debug */,
+				B90F9D3DFC974C16F0B3F2CD6EDEA8EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8C401847A53B4C2810311A8CBD715AD /* Build configuration list for PBXNativeTarget "Toast-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				470E7D5AFABA1DA2E9A6EECE8A32E381 /* Debug */,
+				6B7940BEAED9F0CE732642905F7A096B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC5CFFE6F4EF64A860117F9B703967F1 /* Build configuration list for PBXNativeTarget "Pods-TappyBLE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB5B2100C8B5A176F2A1BF91CD09C329 /* Debug */,
+				6AD29D275DEF86406259AAFF77A1CF6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

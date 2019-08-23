@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Connect TappyBLE-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="ConnectTappyViewController" customModule="TappyBLE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TappyBLE NFC Read &amp; Write App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrC-AT-bUF">
+                                <rect key="frame" x="29" y="93" width="317" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect your TappyBLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nc6-hl-ptE">
+                                <rect key="frame" x="95.5" y="127.5" width="184" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZ3-wF-xkx">
+                                <rect key="frame" x="129.5" y="177" width="116" height="30"/>
+                                <state key="normal" title="Scan for Devices"/>
+                                <connections>
+                                    <action selector="scanForDevicesPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="vsL-Ve-NiI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connection Status:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMy-RS-SSc">
+                                <rect key="frame" x="114.5" y="215" width="146" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ConnectionStatusText" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="La4-dI-Pc2">
+                                <rect key="frame" x="40" y="244" width="295" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pm9-kV-wUv">
+                                <rect key="frame" x="40" y="310" width="295" height="270"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="deviceNameCell" textLabel="zBc-pX-X3Z" style="IBUITableViewCellStyleDefault" id="kS7-4C-k8G">
+                                        <rect key="frame" x="0.0" y="28" width="295" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kS7-4C-k8G" id="Non-pq-Av9">
+                                            <rect key="frame" x="0.0" y="0.0" width="256" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zBc-pX-X3Z">
+                                                    <rect key="frame" x="15" y="0.0" width="241" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="La4-dI-Pc2" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="1vO-4s-HlQ"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="pm9-kV-wUv" secondAttribute="trailing" constant="40" id="83w-O1-SJy"/>
+                            <constraint firstItem="pm9-kV-wUv" firstAttribute="top" secondItem="La4-dI-Pc2" secondAttribute="bottom" constant="36" id="9UQ-aP-qZf"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="pm9-kV-wUv" secondAttribute="bottom" priority="250" constant="38" id="CeG-30-f4D"/>
+                            <constraint firstItem="pm9-kV-wUv" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="ImZ-79-N26"/>
+                            <constraint firstItem="iMy-RS-SSc" firstAttribute="top" secondItem="aZ3-wF-xkx" secondAttribute="bottom" constant="8" id="KO3-oG-a2H"/>
+                            <constraint firstItem="aZ3-wF-xkx" firstAttribute="top" secondItem="Nc6-hl-ptE" secondAttribute="bottom" constant="28.5" id="PUV-2Q-KV6"/>
+                            <constraint firstItem="Nc6-hl-ptE" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Pe9-Ww-4BE"/>
+                            <constraint firstItem="iMy-RS-SSc" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="R1U-Vb-UjM"/>
+                            <constraint firstItem="aZ3-wF-xkx" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Shc-UL-J7T"/>
+                            <constraint firstItem="pm9-kV-wUv" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="40" id="TU7-Lg-RwV"/>
+                            <constraint firstItem="La4-dI-Pc2" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="40" id="X4e-Nw-Q7g"/>
+                            <constraint firstItem="Nc6-hl-ptE" firstAttribute="top" secondItem="zrC-AT-bUF" secondAttribute="bottom" constant="8" id="YKU-Nn-Z0W"/>
+                            <constraint firstItem="zrC-AT-bUF" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="bXS-wD-6EQ"/>
+                            <constraint firstItem="La4-dI-Pc2" firstAttribute="top" secondItem="iMy-RS-SSc" secondAttribute="bottom" constant="8" id="cia-Be-cDo"/>
+                            <constraint firstItem="zrC-AT-bUF" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="73" id="dkj-qf-fjl"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="La4-dI-Pc2" secondAttribute="trailing" constant="40" id="slh-DI-41E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Connect TappyBLE" image="tab_icon_connect_tappy" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="connectionStatusText" destination="La4-dI-Pc2" id="c1e-61-hbL"/>
+                        <outlet property="tappyList" destination="pm9-kV-wUv" id="Bkc-eH-k21"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-999.375" y="786.97183098591552"/>
+        </scene>
+        <!--Read Tags-->
+        <scene sceneID="9LW-h7-2wq">
+            <objects>
+                <viewController title="Read Tags" id="1ol-mx-WJ4" customClass="TagReadViewController" customModule="TappyBLE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dty-CO-TkL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TappyBLE NFC Read &amp; Write App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zzb-jD-uu8">
+                                <rect key="frame" x="29" y="93" width="317" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="ziw-PO-ruU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Read Tags" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N52-yc-c5b">
+                                <rect key="frame" x="147.5" y="128" width="80" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Raw Tag Data History:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Da-Xw-tLT">
+                                <rect key="frame" x="103.5" y="215" width="168" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="TdO-8B-6iI">
+                                <rect key="frame" x="177.5" y="568" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8m-LB-2oU">
+                                <rect key="frame" x="124" y="443" width="127" height="30"/>
+                                <state key="normal" title="Read NFC Tag UID"/>
+                                <connections>
+                                    <action selector="readNFCTagUIDPressed:" destination="1ol-mx-WJ4" eventType="touchUpInside" id="GQ2-K1-jWe"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="rawTagDataText" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zfM-TJ-Xem">
+                                <rect key="frame" x="40" y="244" width="295" height="191"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="tagUIDText" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cgM-0v-lyG">
+                                <rect key="frame" x="40" y="481" width="295" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1ka-7l-1GP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtI-mG-0d3">
+                                <rect key="frame" x="215" y="177" width="100" height="30"/>
+                                <state key="normal" title="Start Auto Poll"/>
+                                <connections>
+                                    <action selector="autoPollPressed:" destination="1ol-mx-WJ4" eventType="touchUpInside" id="34d-lV-w8k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="913-cA-EwS">
+                                <rect key="frame" x="60" y="177" width="100" height="30"/>
+                                <state key="normal" title="Read Tag Data"/>
+                                <connections>
+                                    <action selector="readNFCTagPressed:" destination="1ol-mx-WJ4" eventType="touchUpInside" id="tp0-OP-dVQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Tkg-l7-84p" firstAttribute="trailing" secondItem="EtI-mG-0d3" secondAttribute="trailing" constant="60" id="0vs-M4-b6a"/>
+                            <constraint firstItem="EtI-mG-0d3" firstAttribute="top" secondItem="Dty-CO-TkL" secondAttribute="top" constant="177" id="1eT-64-Ivl"/>
+                            <constraint firstItem="x8m-LB-2oU" firstAttribute="centerX" secondItem="Dty-CO-TkL" secondAttribute="centerX" id="8z7-yO-m0N"/>
+                            <constraint firstItem="Zzb-jD-uu8" firstAttribute="top" secondItem="Tkg-l7-84p" secondAttribute="top" constant="73" id="9Xm-an-fkX"/>
+                            <constraint firstItem="TdO-8B-6iI" firstAttribute="centerX" secondItem="Dty-CO-TkL" secondAttribute="centerX" id="ChQ-ym-HuM"/>
+                            <constraint firstItem="EtI-mG-0d3" firstAttribute="top" secondItem="913-cA-EwS" secondAttribute="top" id="Ik6-gM-QzX"/>
+                            <constraint firstItem="Zzb-jD-uu8" firstAttribute="centerX" secondItem="Dty-CO-TkL" secondAttribute="centerX" id="IqN-yK-Ifh"/>
+                            <constraint firstItem="Tkg-l7-84p" firstAttribute="bottom" secondItem="TdO-8B-6iI" secondAttribute="bottom" priority="750" constant="30" id="Sms-Qn-Kbw"/>
+                            <constraint firstItem="cgM-0v-lyG" firstAttribute="centerX" secondItem="Dty-CO-TkL" secondAttribute="centerX" id="UCs-Kh-z5m"/>
+                            <constraint firstItem="cgM-0v-lyG" firstAttribute="top" secondItem="x8m-LB-2oU" secondAttribute="bottom" constant="8" id="YG9-Rf-1ny"/>
+                            <constraint firstItem="Tkg-l7-84p" firstAttribute="bottom" secondItem="zfM-TJ-Xem" secondAttribute="bottom" priority="250" constant="79" id="a5v-kr-Vt7"/>
+                            <constraint firstItem="913-cA-EwS" firstAttribute="centerX" secondItem="Dty-CO-TkL" secondAttribute="centerX" priority="250" id="eF2-s6-aoE"/>
+                            <constraint firstItem="N52-yc-c5b" firstAttribute="centerX" secondItem="Dty-CO-TkL" secondAttribute="centerX" id="fWz-Ay-Was"/>
+                            <constraint firstItem="cgM-0v-lyG" firstAttribute="leading" secondItem="Tkg-l7-84p" secondAttribute="leading" constant="40" id="gZn-jw-sHl"/>
+                            <constraint firstItem="zfM-TJ-Xem" firstAttribute="leading" secondItem="Tkg-l7-84p" secondAttribute="leading" constant="40" id="hhc-zm-NFn"/>
+                            <constraint firstItem="Tkg-l7-84p" firstAttribute="trailing" secondItem="zfM-TJ-Xem" secondAttribute="trailing" constant="40" id="jCa-fq-BjW"/>
+                            <constraint firstItem="Tkg-l7-84p" firstAttribute="trailing" secondItem="cgM-0v-lyG" secondAttribute="trailing" constant="40" id="jMw-Bj-pcn"/>
+                            <constraint firstItem="TdO-8B-6iI" firstAttribute="top" secondItem="cgM-0v-lyG" secondAttribute="bottom" constant="37" id="jgE-Yg-1b2"/>
+                            <constraint firstItem="zfM-TJ-Xem" firstAttribute="top" secondItem="7Da-Xw-tLT" secondAttribute="bottom" constant="8" id="muJ-cm-e9V"/>
+                            <constraint firstItem="EtI-mG-0d3" firstAttribute="leading" secondItem="913-cA-EwS" secondAttribute="trailing" constant="55" id="nzV-db-0LF"/>
+                            <constraint firstItem="x8m-LB-2oU" firstAttribute="top" secondItem="zfM-TJ-Xem" secondAttribute="bottom" constant="8" id="uBx-wv-sH9"/>
+                            <constraint firstItem="7Da-Xw-tLT" firstAttribute="centerX" secondItem="Dty-CO-TkL" secondAttribute="centerX" id="uC8-4s-Hx6"/>
+                            <constraint firstItem="N52-yc-c5b" firstAttribute="top" secondItem="Zzb-jD-uu8" secondAttribute="bottom" constant="8" id="uWb-DB-8Uo"/>
+                            <constraint firstItem="913-cA-EwS" firstAttribute="top" secondItem="N52-yc-c5b" secondAttribute="bottom" constant="28.5" id="wqC-7s-Uly"/>
+                            <constraint firstItem="7Da-Xw-tLT" firstAttribute="top" secondItem="913-cA-EwS" secondAttribute="bottom" constant="8" id="x2i-I7-EPd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tkg-l7-84p"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="eF2-s6-aoE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Read Tags" image="tab_icon_read_tag" id="mK9-Ug-nnW"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="TdO-8B-6iI" id="Tbe-os-KmT"/>
+                        <outlet property="autoPollButton" destination="EtI-mG-0d3" id="o8e-po-8sa"/>
+                        <outlet property="rawTagDataText" destination="zfM-TJ-Xem" id="zil-Ms-L5w"/>
+                        <outlet property="tagUIDText" destination="cgM-0v-lyG" id="N1V-dk-pRb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b5G-mm-rru" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-335.19999999999999" y="787.55622188905556"/>
+        </scene>
+        <!--Write Tags-->
+        <scene sceneID="xFG-MB-Bae">
+            <objects>
+                <viewController title="Write Tags" automaticallyAdjustsScrollViewInsets="NO" id="iWM-8g-IfU" customClass="TagWriteViewController" customModule="TappyBLE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M8w-F3-m5k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="537-UU-F7p">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uyi-qo-i9e" userLabel="Container View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TappyBLE NFC Read &amp; Write App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqq-ea-aTE">
+                                                <rect key="frame" x="29" y="73" width="317" height="26.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26.5" id="V14-GO-nYd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write Tags" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwE-9Z-Bk0">
+                                                <rect key="frame" x="147" y="107.5" width="81" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzz-ts-wEF">
+                                                <rect key="frame" x="112.5" y="157" width="150" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="RUJ-Ra-AEa"/>
+                                                </constraints>
+                                                <state key="normal" title="Write Text to NFC Tag"/>
+                                                <connections>
+                                                    <action selector="readNFCTagPressed:" destination="1ol-mx-WJ4" eventType="touchUpInside" id="OaU-MJ-2Lf"/>
+                                                    <action selector="writeTextButtonPressed:" destination="iWM-8g-IfU" eventType="touchUpInside" id="hod-1v-4NC"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Enter text..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tOm-cH-nQp">
+                                                <rect key="frame" x="40" y="195" width="295" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                                <connections>
+                                                    <action selector="textInputDidBeginEditing:" destination="iWM-8g-IfU" eventType="editingDidBegin" id="Vpp-2z-Kyp"/>
+                                                    <action selector="textInputDidChange:" destination="iWM-8g-IfU" eventType="editingChanged" id="b29-s3-GXy"/>
+                                                    <action selector="textInputDidEndEditing:" destination="iWM-8g-IfU" eventType="editingDidEnd" id="2a6-H5-BOg"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXz-k6-wZw">
+                                                <rect key="frame" x="115" y="290" width="145" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Sv4-Gw-9lW"/>
+                                                </constraints>
+                                                <state key="normal" title="Write URI to NFC Tag"/>
+                                                <connections>
+                                                    <action selector="readNFCTagPressed:" destination="1ol-mx-WJ4" eventType="touchUpInside" id="KB6-z7-AJ3"/>
+                                                    <action selector="writeUriButtonPressed:" destination="iWM-8g-IfU" eventType="touchUpInside" id="tDd-pj-xWL"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e1f-p3-HT4">
+                                                <rect key="frame" x="40" y="328" width="295" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="25A-Gq-ZOp"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="url"/>
+                                                <connections>
+                                                    <action selector="uriInputDidBeginEditing:" destination="iWM-8g-IfU" eventType="editingDidBegin" id="ew0-hg-hwj"/>
+                                                    <action selector="uriInputDidChange:" destination="iWM-8g-IfU" eventType="editingChanged" id="auA-3x-9Oy"/>
+                                                    <action selector="uriInputDidEndEditing:" destination="iWM-8g-IfU" eventType="editingDidEnd" id="Sgr-Dg-Yyp"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pA4-W0-fke">
+                                                <rect key="frame" x="119.5" y="423" width="136" height="30"/>
+                                                <state key="normal" title="Write Custom NDEF"/>
+                                                <connections>
+                                                    <action selector="writeCustomNdefButtonPressed:" destination="iWM-8g-IfU" eventType="touchUpInside" id="EHb-TR-yVk"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter NDEF in hexadecimal..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OE4-gm-MT0">
+                                                <rect key="frame" x="40" y="461" width="295" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="customInputDidBeginEditing:" destination="iWM-8g-IfU" eventType="editingDidBegin" id="IA1-bo-eyR"/>
+                                                    <action selector="customInputDidChange:" destination="iWM-8g-IfU" eventType="editingChanged" id="SQ4-ny-hYD"/>
+                                                    <action selector="customInputDidEndEditing:" destination="iWM-8g-IfU" eventType="editingDidEnd" id="z8O-SS-rVU"/>
+                                                </connections>
+                                            </textField>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pVO-9L-ayt">
+                                                <rect key="frame" x="82.5" y="499" width="210" height="29"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" priority="750" constant="210" id="xDP-o9-duS"/>
+                                                </constraints>
+                                                <segments>
+                                                    <segment title="Tappy"/>
+                                                    <segment title="Hexadecimal"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="customNdefTypeControlDidChange:" destination="iWM-8g-IfU" eventType="valueChanged" id="kBg-8G-fOt"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="lqq-ea-aTE" firstAttribute="top" secondItem="Uyi-qo-i9e" secondAttribute="top" constant="73" id="05s-9V-UO0"/>
+                                            <constraint firstItem="pA4-W0-fke" firstAttribute="centerX" secondItem="Uyi-qo-i9e" secondAttribute="centerX" id="2id-kS-UhI"/>
+                                            <constraint firstItem="e1f-p3-HT4" firstAttribute="top" secondItem="UXz-k6-wZw" secondAttribute="bottom" constant="8" id="5qa-tb-bpc"/>
+                                            <constraint firstItem="pVO-9L-ayt" firstAttribute="centerX" secondItem="Uyi-qo-i9e" secondAttribute="centerX" id="7Nu-pp-FcF"/>
+                                            <constraint firstItem="uwE-9Z-Bk0" firstAttribute="centerX" secondItem="Uyi-qo-i9e" secondAttribute="centerX" id="7RN-yp-Tri"/>
+                                            <constraint firstItem="uwE-9Z-Bk0" firstAttribute="top" secondItem="lqq-ea-aTE" secondAttribute="bottom" constant="8" id="8iI-XE-Ieq"/>
+                                            <constraint firstAttribute="trailing" secondItem="tOm-cH-nQp" secondAttribute="trailing" constant="40" id="Eo8-BA-aw2"/>
+                                            <constraint firstItem="UXz-k6-wZw" firstAttribute="top" secondItem="tOm-cH-nQp" secondAttribute="bottom" constant="65" id="FTc-wp-03g"/>
+                                            <constraint firstItem="lqq-ea-aTE" firstAttribute="centerX" secondItem="Uyi-qo-i9e" secondAttribute="centerX" id="Gia-1R-R9w"/>
+                                            <constraint firstItem="OE4-gm-MT0" firstAttribute="centerX" secondItem="Uyi-qo-i9e" secondAttribute="centerX" id="ISc-AJ-IKh"/>
+                                            <constraint firstItem="OE4-gm-MT0" firstAttribute="leading" secondItem="Uyi-qo-i9e" secondAttribute="leading" constant="40" id="JHQ-1F-Mad"/>
+                                            <constraint firstItem="pA4-W0-fke" firstAttribute="top" secondItem="e1f-p3-HT4" secondAttribute="bottom" constant="65" id="NZw-yY-lce"/>
+                                            <constraint firstItem="Mzz-ts-wEF" firstAttribute="top" secondItem="uwE-9Z-Bk0" secondAttribute="bottom" constant="28.5" id="RgV-ef-1GB"/>
+                                            <constraint firstItem="UXz-k6-wZw" firstAttribute="centerX" secondItem="Uyi-qo-i9e" secondAttribute="centerX" id="V8W-Eh-hTw"/>
+                                            <constraint firstAttribute="trailing" secondItem="OE4-gm-MT0" secondAttribute="trailing" constant="40" id="WBU-sU-05w"/>
+                                            <constraint firstItem="tOm-cH-nQp" firstAttribute="top" secondItem="Mzz-ts-wEF" secondAttribute="bottom" constant="8" id="WkN-NK-jAQ"/>
+                                            <constraint firstItem="e1f-p3-HT4" firstAttribute="leading" secondItem="Uyi-qo-i9e" secondAttribute="leading" constant="40" id="YKX-kl-zHT"/>
+                                            <constraint firstAttribute="trailing" secondItem="e1f-p3-HT4" secondAttribute="trailing" constant="40" id="dvg-HO-693"/>
+                                            <constraint firstAttribute="bottom" secondItem="pVO-9L-ayt" secondAttribute="bottom" constant="141" id="f14-rF-3cu"/>
+                                            <constraint firstItem="Mzz-ts-wEF" firstAttribute="centerX" secondItem="Uyi-qo-i9e" secondAttribute="centerX" id="n2a-Iz-glD"/>
+                                            <constraint firstAttribute="trailing" secondItem="pVO-9L-ayt" secondAttribute="trailing" priority="250" constant="80" id="nso-m4-p6t"/>
+                                            <constraint firstItem="pVO-9L-ayt" firstAttribute="leading" secondItem="Uyi-qo-i9e" secondAttribute="leading" priority="250" constant="80" id="osD-Rw-sNp"/>
+                                            <constraint firstItem="OE4-gm-MT0" firstAttribute="top" secondItem="pA4-W0-fke" secondAttribute="bottom" constant="8" id="prU-CL-upE"/>
+                                            <constraint firstItem="pVO-9L-ayt" firstAttribute="top" secondItem="OE4-gm-MT0" secondAttribute="bottom" constant="8" id="r72-1z-dxT"/>
+                                            <constraint firstItem="tOm-cH-nQp" firstAttribute="leading" secondItem="Uyi-qo-i9e" secondAttribute="leading" constant="40" id="y6r-rx-5vd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Uyi-qo-i9e" firstAttribute="top" secondItem="537-UU-F7p" secondAttribute="top" id="amH-MF-Lvs"/>
+                                    <constraint firstAttribute="bottom" secondItem="Uyi-qo-i9e" secondAttribute="bottom" id="ctt-lD-7Ur"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uyi-qo-i9e" secondAttribute="trailing" id="lpg-YB-dyi"/>
+                                    <constraint firstItem="Uyi-qo-i9e" firstAttribute="width" secondItem="537-UU-F7p" secondAttribute="width" id="nsi-bN-gQd"/>
+                                    <constraint firstItem="Uyi-qo-i9e" firstAttribute="leading" secondItem="537-UU-F7p" secondAttribute="leading" id="tNd-rz-AYZ"/>
+                                </constraints>
+                            </scrollView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="OLk-qg-vEc">
+                                <rect key="frame" x="177.5" y="568" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OLk-qg-vEc" firstAttribute="top" secondItem="W9r-HF-rB3" secondAttribute="top" priority="250" constant="449" id="6eT-p5-GGN"/>
+                            <constraint firstItem="537-UU-F7p" firstAttribute="leading" secondItem="W9r-HF-rB3" secondAttribute="leading" id="HCC-l9-OeA"/>
+                            <constraint firstItem="537-UU-F7p" firstAttribute="top" secondItem="W9r-HF-rB3" secondAttribute="top" id="HZ5-ge-ZtJ"/>
+                            <constraint firstItem="OLk-qg-vEc" firstAttribute="centerX" secondItem="M8w-F3-m5k" secondAttribute="centerX" id="P6R-dR-kuO"/>
+                            <constraint firstItem="W9r-HF-rB3" firstAttribute="bottom" secondItem="OLk-qg-vEc" secondAttribute="bottom" priority="750" constant="30" id="nr8-4F-bbC"/>
+                            <constraint firstItem="W9r-HF-rB3" firstAttribute="trailing" secondItem="537-UU-F7p" secondAttribute="trailing" id="taM-lk-xgc"/>
+                            <constraint firstItem="537-UU-F7p" firstAttribute="bottom" secondItem="W9r-HF-rB3" secondAttribute="bottom" id="yge-BO-NXE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W9r-HF-rB3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Write Tags" image="tab_icon_write_tag" id="5oE-UA-rK6"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="OLk-qg-vEc" id="XEL-Li-AoU"/>
+                        <outlet property="customNdefInputField" destination="OE4-gm-MT0" id="Wfn-PY-BgB"/>
+                        <outlet property="customNdefSegmentedControl" destination="pVO-9L-ayt" id="hKh-tf-DGe"/>
+                        <outlet property="scrollView" destination="537-UU-F7p" id="Vo2-ze-s35"/>
+                        <outlet property="textInputField" destination="tOm-cH-nQp" id="1cX-rr-n7Z"/>
+                        <outlet property="uriInputField" destination="e1f-p3-HT4" id="FTw-oP-FDe"/>
+                        <outlet property="writeCustomNdefToTagButton" destination="pA4-W0-fke" id="yp1-Wd-T2R"/>
+                        <outlet property="writeTextToTagButton" destination="Mzz-ts-wEF" id="V8A-FS-I2e"/>
+                        <outlet property="writeUriToTagButton" destination="UXz-k6-wZw" id="jPl-RU-wCC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I9Q-M6-IOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="326" y="788"/>
+        </scene>
+        <!--Launch URLs-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" userLabel="Launch URLs" customClass="LaunchUrlViewController" customModule="TappyBLE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m9G-fN-93Y">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ZAA-b4-zJd">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKa-t2-JCz">
+                                <rect key="frame" x="0.0" y="574" width="375" height="44"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
+                                <items>
+                                    <barButtonItem title="&lt;" image="navigation_back" id="mHd-mC-oGW">
+                                        <connections>
+                                            <action selector="backWithSender:" destination="8rJ-Kc-sve" id="rX9-Gh-fbZ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="tam-XU-3FF"/>
+                                    <barButtonItem title="&gt;" image="navigation_forward" id="g6b-JZ-9ai">
+                                        <connections>
+                                            <action selector="forwardWithSender:" destination="8rJ-Kc-sve" id="IjJ-oc-DlK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="SIZ-Zw-9Sl"/>
+                                    <barButtonItem title="R" image="navigation_refresh" id="w4g-lf-NMt">
+                                        <connections>
+                                            <action selector="reloadWithSender:" destination="8rJ-Kc-sve" id="cDr-k1-xXy"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NKa-t2-JCz" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="3l2-NC-gah"/>
+                            <constraint firstItem="m9G-fN-93Y" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="867-pf-hoS"/>
+                            <constraint firstItem="NKa-t2-JCz" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="CFe-JQ-ubP"/>
+                            <constraint firstItem="ZAA-b4-zJd" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="Qcq-5X-hZV"/>
+                            <constraint firstItem="ZAA-b4-zJd" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="Qwv-Ga-cXG"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="m9G-fN-93Y" secondAttribute="bottom" id="R7Q-jX-rEz"/>
+                            <constraint firstItem="m9G-fN-93Y" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="daS-7b-BHF"/>
+                            <constraint firstItem="m9G-fN-93Y" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="eIc-tu-uMR"/>
+                            <constraint firstItem="NKa-t2-JCz" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="iSD-bg-cKb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Launch URLs" image="tab_icon_launch_url" id="cPa-gy-q4n">
+                        <inset key="largeContentSizeImageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="1"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ZAA-b4-zJd" id="vG0-Tp-OaR"/>
+                        <outlet property="backButton" destination="mHd-mC-oGW" id="8mj-ng-VX1"/>
+                        <outlet property="forwardButton" destination="g6b-JZ-9ai" id="Mmk-UF-R58"/>
+                        <outlet property="navigationBar" destination="NKa-t2-JCz" id="8Ok-om-VmH"/>
+                        <outlet property="reloadButton" destination="w4g-lf-NMt" id="aIY-8a-V6Z"/>
+                        <outlet property="webView" destination="m9G-fN-93Y" id="8ku-AM-aUt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="787.55622188905556"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" id="W28-zg-YXA" userLabel="Main">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="1ol-mx-WJ4" kind="relationship" relationship="viewControllers" id="J6D-eL-Mrf"/>
+                        <segue destination="iWM-8g-IfU" kind="relationship" relationship="viewControllers" id="0Ow-ed-z55"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="navigation_back" width="24" height="24"/>
+        <image name="navigation_forward" width="24" height="24"/>
+        <image name="navigation_refresh" width="24" height="24"/>
+        <image name="tab_icon_connect_tappy" width="30" height="30"/>
+        <image name="tab_icon_launch_url" width="30" height="30"/>
+        <image name="tab_icon_read_tag" width="30" height="30"/>
+        <image name="tab_icon_write_tag" width="30" height="30"/>
+    </resources>
+</document>
