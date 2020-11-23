@@ -212,7 +212,7 @@ class TagWriteViewController: UIViewController, UITextFieldDelegate {
     @objc func keyboardWasShown(notification: NSNotification){
         //  Calculate exact keyboard size
         self.scrollView.isScrollEnabled = true
-        var info = notification.userInfo!
+        let info = notification.userInfo!
         let keyboardSize = (info[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue.size
         let contentInsets : UIEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: keyboardSize!.height, right: 0.0)
         
@@ -225,7 +225,7 @@ class TagWriteViewController: UIViewController, UITextFieldDelegate {
     
     @objc func keyboardWillBeHidden(notification: NSNotification){
         // On keyboard disappear, restore original position
-        var info = notification.userInfo!
+        let info = notification.userInfo!
         let keyboardSize = (info[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue.size
         let contentInsets : UIEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: -keyboardSize!.height, right: 0.0)
         self.scrollView.contentInset = contentInsets
