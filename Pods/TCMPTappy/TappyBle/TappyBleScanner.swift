@@ -72,7 +72,7 @@ public class TappyBleScanner : NSObject, CBCentralManagerDelegate{
     
     @objc public func startScan() -> Bool{
         if state == TappyBleScannerStatus.STATUS_POWERED_ON{
-            centralManager.scanForPeripherals(withServices: [TappyBleDeviceDefinition.getSerialServiceUuid()], options: nil)
+            centralManager.scanForPeripherals(withServices: TappyBleDeviceDefinition.getSerialServiceUuids(), options: nil)
             changeStateAndNotify(newState: TappyBleScannerStatus.STATUS_SCANNING)
             return true
         }

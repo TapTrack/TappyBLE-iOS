@@ -7,6 +7,8 @@ target 'TappyBLE' do
   use_frameworks!
 
   # Pods for TappyBLE
+  # Uncomment the next line and comment the one below it to do local pod testing
+  # pod 'TCMPTappy', :path => '/Users/Shared/Xcode Projects/TCMPTappy-iOS/TCMPTappy-iOS/'
   pod 'TCMPTappy'
   pod 'Toast-Swift', '~> 4.0.0'
   pod 'NdefLibrary'

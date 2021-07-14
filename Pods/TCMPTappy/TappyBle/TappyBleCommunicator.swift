@@ -92,7 +92,7 @@ public class TappyBleCommunicator : NSObject, CBPeripheralDelegate, CBCentralMan
                 return
             }
             NSLog("TappyBleCommunicator: CB Central Manager connected to the tappyPeripheral which is a TappyBle, attempting to discover serial service")
-            tappyPeripheral.discoverServices([TappyBleDeviceDefinition.getSerialServiceUuid()])
+            tappyPeripheral.discoverServices(TappyBleDeviceDefinition.getSerialServiceUuids())
             changeStateAndNotify(newState: TappyStatus.STATUS_CONNECTING)
         }else{
             NSLog("TappyBleCommunicator: CB Central Manager connected to an unrecognized peripheral.")
@@ -124,7 +124,6 @@ public class TappyBleCommunicator : NSObject, CBPeripheralDelegate, CBCentralMan
         }
     }
     
-    
     //MARK : CBPeripheralDelegate
     @objc
     public func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
@@ -139,10 +138,10 @@ public class TappyBleCommunicator : NSObject, CBPeripheralDelegate, CBCentralMan
             NSLog(String(format: "TappyBleCommunicator: CB Central Manager discovered a service for %@, validating service UUID..", arguments:  [tappyName]))
             if let services = peripheral.services {
                 for service : CBService in services {
-                    if service.uuid.isEqual(TappyBleDeviceDefinition.getSerialServiceUuid()) {
+                    if (service.uuid.isEqual(TappyBleDeviceDefinition.getSerialServiceUuid()) || service.uuid.isEqual(TappyBleDeviceDefinition.getSerialServiceUuidV5())) {
                         NSLog(String(format: "TappyBleCommunicator: discovered service valid serial service on a %@, dicoverring Tx and Rx characteristics", arguments:  [tappyName]))
                         backingSerialService = service
-                        tappyPeripheral.discoverCharacteristics([TappyBleDeviceDefinition.getRxCharacteristicUuid(), TappyBleDeviceDefinition.getTxCharacteristicUuid()], for: service)
+                        tappyPeripheral.discoverCharacteristics([TappyBleDeviceDefinition.getRxCharacteristicUuid(),                                    TappyBleDeviceDefinition.getTxCharacteristicUuid(),TappyBleDeviceDefinition.getRxCharacteristicUuidV5(), TappyBleDeviceDefinition.getTxCharacteristicUuidV5()], for: service)
                         return
                     }
                 }
@@ -173,7 +172,7 @@ public class TappyBleCommunicator : NSObject, CBPeripheralDelegate, CBCentralMan
              is made a delegate of a CBPeriperal that has connected elsewhere, probably the application itself, without specifiing a list of desired charactersitics
              */
             
-            if (service.uuid == TappyBleDeviceDefinition.getSerialServiceUuid()){
+            if (service.uuid == TappyBleDeviceDefinition.getSerialServiceUuid() || service.uuid == TappyBleDeviceDefinition.getSerialServiceUuidV5()){
                 backingSerialService = service
                 serviceCorrect = true
                 NSLog(String(format: "TappyBleCommunicator: correct serial service found for %@, validating Tx and Rx characteristics", arguments: [tappyName]))
@@ -186,12 +185,12 @@ public class TappyBleCommunicator : NSObject, CBPeripheralDelegate, CBCentralMan
             
             if let characteristics = service.characteristics {
                 for characteristic : CBCharacteristic in characteristics {
-                    if characteristic.uuid == TappyBleDeviceDefinition.getRxCharacteristicUuid(){
+                    if (characteristic.uuid == TappyBleDeviceDefinition.getRxCharacteristicUuid() || characteristic.uuid == TappyBleDeviceDefinition.getRxCharacteristicUuidV5() ){
                         backingRxCharacteristic = characteristic
                         rxCharFound = true
                         NSLog(String(format: "TappyBleCommunicator: assigned Rx Char for %@", arguments:  [tappyName]))
                     }
-                    else if characteristic.uuid == TappyBleDeviceDefinition.getTxCharacteristicUuid() {
+                    else if (characteristic.uuid == TappyBleDeviceDefinition.getTxCharacteristicUuid() || characteristic.uuid == TappyBleDeviceDefinition.getTxCharacteristicUuidV5()  ){
                         backingTxCharacteristic = characteristic
                         peripheral.setNotifyValue(true, for: characteristic) //Subscribe
                         txCharFound = true
@@ -230,7 +229,7 @@ public class TappyBleCommunicator : NSObject, CBPeripheralDelegate, CBCentralMan
     }
     
     private func charactersticRead(tappyCharacteristic : CBCharacteristic){
-        if(tappyCharacteristic.uuid == TappyBleDeviceDefinition.getTxCharacteristicUuid()){
+        if(tappyCharacteristic.uuid == TappyBleDeviceDefinition.getTxCharacteristicUuid() || tappyCharacteristic.uuid == TappyBleDeviceDefinition.getTxCharacteristicUuidV5() ){
             if let value = tappyCharacteristic.value{
                 NSLog(String(format: "TappyBleCommunicator: Tx characteristic read for %@", arguments: [tappyName]))
                 dataReceivedListener(Array(value))
@@ -247,7 +246,7 @@ public class TappyBleCommunicator : NSObject, CBPeripheralDelegate, CBCentralMan
                 changeStateAndNotify(newState: TappyStatus.STATUS_ERROR)
                 return
             }
-            if(characteristic.uuid == TappyBleDeviceDefinition.getRxCharacteristicUuid()){
+            if(characteristic.uuid == TappyBleDeviceDefinition.getRxCharacteristicUuid() || characteristic.uuid == TappyBleDeviceDefinition.getRxCharacteristicUuidV5()){
                 NSLog(String(format: "TappyBleCommunicator: Rx characteristic written for %@", arguments: [tappyName]))
                 if packetsToSend.count > 0 {
                     packetsToSend.removeFirst()
@@ -354,7 +353,7 @@ public class TappyBleCommunicator : NSObject, CBPeripheralDelegate, CBCentralMan
             state =  TappyStatus.STATUS_NOT_READY_TO_CONNECT
         }else if(centralManager.state == .poweredOn){
             NSLog("TappyBleCommunicator: BLE is powered on")            
-            if centralManager.retrieveConnectedPeripherals(withServices : [TappyBleDeviceDefinition.getSerialServiceUuid()]).count != 0 {
+            if centralManager.retrieveConnectedPeripherals(withServices : TappyBleDeviceDefinition.getSerialServiceUuids()).count != 0 {
                 state = TappyStatus.STATUS_READY
             }else{
                 state = TappyStatus.STATUS_DISCONNECTED

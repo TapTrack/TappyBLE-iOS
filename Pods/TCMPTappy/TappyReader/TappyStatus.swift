@@ -33,7 +33,7 @@ import Foundation
     case STATUS_NOT_READY_TO_CONNECT = 7
     case STATUS_COMMUNICATOR_ERROR = 8
     
-    func getString() -> String{
+    public func getString() -> String{
         switch self {
         case .STATUS_DISCONNECTED:
             return "STATUS_DISCONNECTED"

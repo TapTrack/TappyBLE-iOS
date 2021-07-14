@@ -3,7 +3,7 @@
 //  TappyBLE
 //
 //  Created by David Shalaby on 2019-03-13.
-//  Copyright © 2019 TapTrack. All rights reserved.
+//  Copyright © 2021 TapTrack. All rights reserved.
 //
 
 import UIKit
@@ -36,10 +36,9 @@ class ConnectTappyViewController: UIViewController, UITableViewDataSource, UITab
         }
     }
     
-    func startScan() -> Bool{
-        if state == TappyBleScannerStatus.STATUS_POWERED_ON {
-            tappyList.isHidden = true
-            centralManager.scanForPeripherals(withServices: [TappyBleDeviceDefinition.getSerialServiceUuid()], options: nil)
+    @objc public func startScan() -> Bool{
+        if state == TappyBleScannerStatus.STATUS_POWERED_ON{
+            centralManager.scanForPeripherals(withServices: TappyBleDeviceDefinition.getSerialServiceUuids(), options: nil)
             changeStateAndNotify(newState: TappyBleScannerStatus.STATUS_SCANNING)
             return true
         }
@@ -216,6 +215,8 @@ class ConnectTappyViewController: UIViewController, UITableViewDataSource, UITab
             }
         } else if (status == TappyStatus.STATUS_READY) {
             if let tappyName: String = TappyBleManager.shared().tappyBle?.getCommunicator().getDeviceDescription() {
+                /*Send some bytes to trigger the pairing dialog in iOS (for newer TappyBLEs) - this prompt is only presented to the user when data transmission is actually attempted*/
+                TappyBleManager.shared().tappyBle?.getCommunicator().sendBytes(data: [0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00])
                 connectionStatusText.text = "Connected to " + tappyName
                 prevConnectedMessage = connectionStatusText.text
             } else {

@@ -23,7 +23,7 @@
 
 import Foundation
 @objc
-protocol TCMPApplicationErrorMessage{
+public protocol TCMPApplicationErrorMessage{
     var appErrorCode : UInt8 {get}
     var internalErrorCode : UInt8 {get}
     var readerStatusCode : UInt8 {get}

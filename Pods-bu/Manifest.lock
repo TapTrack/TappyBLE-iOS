@@ -1,0 +1,24 @@
+PODS:
+  - NdefLibrary (1.0.0)
+  - TCMPTappy (1.1.0)
+  - Toast-Swift (4.0.1)
+
+DEPENDENCIES:
+  - NdefLibrary
+  - TCMPTappy
+  - Toast-Swift (~> 4.0.0)
+
+SPEC REPOS:
+  trunk:
+    - NdefLibrary
+    - TCMPTappy
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  NdefLibrary: c86cc1d27fdb9109e008cb9578420c39d0442389
+  TCMPTappy: b43298096efdadbf1ed123ed78ef6e9df2f586cd
+  Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
+
+PODFILE CHECKSUM: eb5be959a6ca50bdc4f0a8e1b1b1eefb0c9cded7
+
+COCOAPODS: 1.10.0

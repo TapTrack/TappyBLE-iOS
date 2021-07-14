@@ -22,7 +22,7 @@
  */
 import Foundation
 @objc
-protocol MessageResolver{
+public protocol MessageResolver{
      static func resolveCommand(message : TCMPMessage) throws -> TCMPMessage
      static func resolveResponse(message : TCMPMessage) throws -> TCMPMessage
 }
