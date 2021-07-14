@@ -1,6 +1,0 @@
-framework module Pods_TappyBLEUITests {
-  umbrella header "Pods-TappyBLEUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-framework module TCMPTappy {
-  umbrella header "TCMPTappy-umbrella.h"
-
-  export *
-  module * { export * }
-}

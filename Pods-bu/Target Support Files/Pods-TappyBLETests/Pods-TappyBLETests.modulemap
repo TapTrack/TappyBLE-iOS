@@ -1,6 +1,0 @@
-framework module Pods_TappyBLETests {
-  umbrella header "Pods-TappyBLETests-umbrella.h"
-
-  export *
-  module * { export * }
-}
